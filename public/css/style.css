@@ -49,7 +49,9 @@
 /* =============== Colors Used =====================
 
   Red         : #F44A4A;
+  skill9pink  : #EB1481
   Mehroon     : #992337;
+  skill9-dpink: #BC1067
   Blue        : #0284A2;
   Black       : #000;
   White       : #FFF;
@@ -1150,7 +1152,7 @@ sup.redstar {
   transition: all 0.5s ease;
 }
 .categories-block:hover {
-  border: 2px solid #F44A4A;
+  border: 2px solid #EB1481;
   border-radius: 6px;
 }
 .categories-block [class^="flaticon-"]:before, 
@@ -2210,7 +2212,7 @@ sup.redstar {
   border-radius: 50%;
 }
 .form-check input[type="radio"]:checked:before {
-  background: #F44A4A;   
+  background: #EB1481;   
 }
 .form-check input[type="radio"]:checked {
   border-color: #DDD;
@@ -3105,7 +3107,7 @@ sup.redstar {
   text-align: center;
 } 
 .page-item .page-link {
-  color: #F44A4A;
+  color: #EB1481;
   font-size: 17px;
   background-color: transparent;
   border: 1px solid #EDEEF0;
@@ -3119,14 +3121,14 @@ sup.redstar {
   color: var(--text-white-color);
   font-size: 17px;
   background-color: var(--background-red-bg-color);
-  border: 1px solid #F44A4A;
+  border: 1px solid #EB1481;
   border-radius: 0;
   padding: 10px 15px;
 }
 .page-item .page-link:hover {
   color: var(--text-white-color);
   background-color: var(--background-red-bg-color);
-  border: 1px solid #F44A4A;
+  border: 1px solid #EB1481;
 }
 .blog-list .list {
   font-weight: 500;
@@ -5709,7 +5711,7 @@ sup.redstar {
 }
 .dropdown ul a li:hover {
   background-color: #E6E6E6;
-  border-left: 3px solid #f44a4a;
+  border-left: 3px solid #EB1481;
 }
 .btn-default:hover {
   color: #333;
@@ -8702,7 +8704,7 @@ input[type="text"].search-input {
 }
 .home-search .searchTerm {
   width: 50%;
-  border: 2px solid #f44a4a;
+  border: 2px solid #EB1481;
   box-shadow: 5px 5px 10px rgb(0 0 0 / 10%);
   border-right: none;
   padding: 5px 20px;
@@ -9487,8 +9489,8 @@ input[type="text"].search-input {
 }
 .star-rating {
   display: inline-block;
-  background: #F44A4A;
-  border: 1px solid #F44A4A;
+  background: #EB1481;
+  border: 1px solid #EB1481;
   border-radius: 5px;
   font-size: 12px;
   color: #FFF;
@@ -9869,7 +9871,7 @@ svg.feather {
 }
 .genre-slide-image .protip-wish-btn svg.feather:hover {
   background-color: var(--background-red-bg-color);
-  border: 1px solid #f44a4a;
+  border: 1px solid #EB1481;
   color: #FFF;
 }
 .genre-slide-image:hover .protip-wish-btn svg.feather {
@@ -9892,7 +9894,7 @@ svg.feather {
 }
 .immi-slider-block .protip-wish-btn svg.feather:hover {
   background-color: var(--background-red-bg-color);
-  border: 1px solid #f44a4a;
+  border: 1px solid #EB1481;
   color: #FFF;
 }
 .immi-slider-block:hover .protip-wish-btn svg.feather {
@@ -9932,7 +9934,7 @@ svg.feather {
   padding: 0;
 } 
 .des-btn-block .protip-wishlist ul li svg.feather {
-  border: 1px solid #f44a4a;
+  border: 1px solid #EB1481;
   border-radius: 100%;
   padding: 1px 7px 0;
   width: 35px;
@@ -9946,7 +9948,7 @@ svg.feather {
 }
 .des-btn-block .protip-wishlist ul li svg.feather:hover {
   background-color: var(--background-red-bg-color);
-  border: 1px solid #f44a4a;
+  border: 1px solid #EB1481;
   color: #FFF;
 }
 .prime-description-under-block .product-learn-dtl ul li a {
@@ -10235,7 +10237,7 @@ svg.feather {
 }
 .protip-wish-btn-two svg.feather:hover {
   background-color: var(--background-red-bg-color);
-  border: 1px solid #F44A4A;
+  border: 1px solid #EB1481;
   color: #FFF;
 }
 .immi-slider-block:hover .protip-wish-btn-two svg.feather {
@@ -10258,7 +10260,7 @@ svg.feather {
 }
 .genre-slide-image .protip-wish-btn-two svg.feather:hover {
   background-color: var(--background-red-bg-color);
-  border: 1px solid #F44A4A;
+  border: 1px solid #EB1481;
   color: #FFF;
 }
 .genre-slide-image:hover .protip-wish-btn-two svg.feather {
@@ -10582,7 +10584,7 @@ svg.feather {
   line-height: 1.5;
 }
 .instructor-link ul li svg.feather {
-  color: #f44a4a;
+  color: #EB1481;
   margin: 0;
 }
 .instructor-block .view-heading a {
@@ -10688,7 +10690,7 @@ svg.feather {
   transition: all 0.5s ease;
 }
 .facts-block:hover {
-  border: 2px solid #f44a4a;
+  border: 2px solid #EB1481;
   border-radius: 6px;
 }
 .facts-block-one {
@@ -10763,7 +10765,7 @@ svg.feather {
   border: 1px solid #FFF;
 }
 .recommendations-block {
-  background-color: #f44a4a;
+  background-color: #EB1481;
   height: 320px;
   padding: 89px 75px;
   color: #FFF;
@@ -10985,7 +10987,7 @@ svg.feather {
   font-weight: 600;
   background: inherit;
   text-transform: uppercase;
-  color: #F44A4A;
+  color: #EB1481;
   -webkit-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -10993,9 +10995,9 @@ svg.feather {
   transition: all 0.5s ease;
 }
 .instructor-home-block:hover {
-  /*border: 2px solid #f44a4a;
+  /*border: 2px solid #EB1481;
   border-radius: 6px;*/
-  /*background-image: linear-gradient(white, white), linear-gradient(197.61deg, #f44a4a , #6e1a52);
+  /*background-image: linear-gradient(white, white), linear-gradient(197.61deg, #EB1481 , #6e1a52);
   background-origin: border-box;
   background-clip: content-box, border-box;*/
 }
@@ -11004,8 +11006,8 @@ svg.feather {
 }
 .heart-fill svg.feather {
   fill: #FFF;
-  background-color: #F44A4A !important;
-  border: 1px solid #F44A4A !important;
+  background-color: #EB1481 !important;
+  border: 1px solid #EB1481 !important;
   margin: 0 3px !important;
   -webkit-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -11015,7 +11017,7 @@ svg.feather {
 }
 .heart-fill svg.feather:hover {
   background-color: #FFF !important;
-  color: #f44a4a !important;
+  color: #EB1481 !important;
 }
 .sticky.is-sticky {
   position: fixed;
@@ -11053,7 +11055,7 @@ svg.feather {
 }
 .business-home-search .searchTerm {
   width: 80%;
-  border: 2px solid #f44a4a;
+  border: 2px solid #EB1481;
   box-shadow: 5px 5px 10px rgb(0 0 0 / 10%);
   border-right: none;
   padding: 5px 20px;
@@ -11112,11 +11114,11 @@ svg.feather {
 .btn-outline-dark:not(:disabled):not(.disabled).active, 
 .btn-outline-dark:not(:disabled):not(.disabled):active, 
 .show>.btn-outline-dark.dropdown-toggle{
-  background-color: #F44A4A;
+  background-color: #EB1481;
   border-color: inherit;
 }
 .btn-outline-dark:hover {
-  background-color: #F44A4A;
+  background-color: #EB1481;
   border-color: inherit;
 }
 .btn-outline-dark svg.feather {
@@ -11163,7 +11165,7 @@ svg.feather {
 }
 .course-bought-block .img-wishlist svg.feather:hover {
   background-color: var(--background-red-bg-color);
-  border: 1px solid #f44a4a;
+  border: 1px solid #EB1481;
   color: #FFF;
 }
 .course-bought-block .view-user-img .user-img-one {
@@ -11234,7 +11236,7 @@ svg.feather {
 }
 .protip-wish-btn svg.feather:hover {
   background-color: var(--background-red-bg-color);
-  border: 1px solid #F44A4A;
+  border: 1px solid #EB1481;
   color: #FFF;
 }
 .student-view-block:hover .protip-wish-btn svg.feather {
@@ -11273,8 +11275,8 @@ svg.feather {
   transition: all 0.5s ease;
 }
 .wishlist-action svg.feather:hover {
-  background-color: #F44A4A;
-  border: 1px solid #F44A4A;
+  background-color: #EB1481;
+  border: 1px solid #EB1481;
   color: #FFF;
 }
 .purchase-main-block .table {
@@ -11291,13 +11293,13 @@ svg.feather {
   vertical-align: middle;
 }
 #cssmenu > ul > li.has-sub :hover > a {
-  color: #f44a4a;
+  color: #EB1481;
 }
 #cssmenu > ul > li.has-sub :hover > svg.feather {
-  color: #F44A4A;
+  color: #EB1481;
 }
 #cssmenu ul ul li a:hover {
-  border-left: 3px solid #f44a4a;
+  border-left: 3px solid #EB1481;
 }
 .upload-items .btn-primary {
   padding: 8px 16px;
@@ -11832,7 +11834,7 @@ svg.feather {
 .recommendation-btn .btn-primary {
   background-color: #FFF;
   border-radius: 6px;
-  color: #F44A4A;
+  color: #EB1481;
 }
 .requirements {
   margin-bottom: 30px;
@@ -12060,9 +12062,9 @@ svg.feather {
   border-color: inherit;
 }
 .testimonial-block:hover {
-  border: 2px solid #f44a4a;
+  border: 2px solid #EB1481;
   border-radius: 6px;
-  /*background-image: linear-gradient(white, white), linear-gradient(197.61deg, #f44a4a , #6e1a52);
+  /*background-image: linear-gradient(white, white), linear-gradient(197.61deg, #EB1481 , #6e1a52);
   background-origin: border-box;
   background-clip: content-box, border-box;*/
   transform: translateY(-25px);
@@ -12423,8 +12425,8 @@ textarea.form-con {
   height: 28px;
 }
 .instructor-home-block .tooltip .tooltip-icon svg.feather:hover {
-  border: 1px solid #F44A4A;
-  background-color: #F44A4A;
+  border: 1px solid #EB1481;
+  background-color: #EB1481;
   color: #FFF;
 }
 .instructor-home-block .tooltip .tooltiptext {
@@ -12470,7 +12472,7 @@ textarea.form-con {
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
-  color: #F44A4A;
+  color: #EB1481;
 }
 .signup-block .form-check-input {
   margin-top: 0.6rem;
@@ -12588,8 +12590,8 @@ textarea.form-con {
     transition: opacity 0.3s;
 }
 .instructor-profile-block .tooltip .tooltip-icon svg.feather:hover {
-    border: 1px solid #F44A4A;
-    background-color: #F44A4A;
+    border: 1px solid #EB1481;
+    background-color: #EB1481;
     color: #FFF;
 }
 .instructor-profile-block .tooltip:hover .tooltiptext {
@@ -12640,7 +12642,7 @@ textarea.form-con {
   width: inherit;
   background-color: var(--background-red-bg-color);
   color: #FFF;
-  border: 1px solid #F44A4A;
+  border: 1px solid #EB1481;
 }
 .cart-main-block .checkout-btn .btn-primary {
   padding: 5px 7px;
@@ -12982,7 +12984,7 @@ textarea.form-con {
   height: 20px;
 }
 .navigation-one > #cssmenu > ul > li > ul > li:hover > a {
-  color: #F44A4A;
+  color: #EB1481;
 }
 .navigation-one > #cssmenu > ul > li > ul > li > a > svg.feather {
   width: 16px;
@@ -12990,7 +12992,7 @@ textarea.form-con {
   margin: 2px 10px 0 0;
 }
 .navigation-one > #cssmenu > ul > li > ul > li:hover > a > svg.feather {
-  color: #F44A4A;
+  color: #EB1481;
 }
 
 
@@ -13014,7 +13016,7 @@ textarea.form-con {
   border-radius: 6px;
 }
 .affiliate-dashboard-wallet-img {
-  background-color: #F44A4A;
+  background-color: #EB1481;
   border-radius: 100%;
   width: 50px;
   height: 50px;
@@ -13050,8 +13052,8 @@ textarea.form-con {
   transition: all 0.5s ease;
 }
 .view-button .btn-secondary:hover {
-  /*background-color: #F44A4A;*/
-  color: #F44A4A;
+  /*background-color: #EB1481;*/
+  color: #EB1481;
   /*border: 1px solid #FFF;*/
   -webkit-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -13071,7 +13073,7 @@ textarea.form-con {
   -webkit-transform 0.3s ease;
 }
 .view-button .btn-secondary:hover svg.feather {
-  color: #F44A4A;
+  color: #EB1481;
   transform: translate3d(5px, 0, 0);
 }
 
@@ -13087,8 +13089,8 @@ textarea.form-con {
   transition: all 0.5s ease;
 }
 .instructor-button .btn-secondary:hover {
-  /*background-color: #F44A4A;*/
-  color: #F44A4A;
+  /*background-color: #EB1481;*/
+  color: #EB1481;
   /*border: 1px solid #FFF;*/
   -webkit-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -13108,7 +13110,7 @@ textarea.form-con {
   -webkit-transform 0.3s ease;
 }
 .instructor-button .btn-secondary:hover svg.feather {
-  color: #F44A4A;
+  color: #EB1481;
   transform: translate3d(5px, 0, 0);
 }
 .advance-badge .badge {
@@ -13123,7 +13125,7 @@ textarea.form-con {
 } 
 .advance-badge .badge.bg-danger {
   color: #FFF;
-  background-color: #F44A4A !important;
+  background-color: #EB1481 !important;
 }
 .advance-badge .badge.bg-warning {
   color: #29303b;
@@ -13156,8 +13158,8 @@ textarea.form-con {
   height: 28px;
 }
 #blog-post-slider .tooltip .tooltip-icon svg.feather:hover {
-  border: 1px solid #F44A4A;
-  background-color: #F44A4A;
+  border: 1px solid #EB1481;
+  background-color: #EB1481;
   color: #FFF;
 }
 #blog-post-slider .tooltip .tooltiptext {
@@ -13275,7 +13277,7 @@ textarea.form-con {
 .heart-fill svg.feather:hover {
   background-color: var(--background-red-bg-color) !important;
   color: #FFF !important;
-  border: 1px solid #F44A4A;
+  border: 1px solid #EB1481;
   width: 28px;
   height: 28px;
 }
@@ -13656,7 +13658,7 @@ textarea.form-con {
 }
 /* .pricing-rates {
   height: 100%;
-  background: #F44A4A;
+  background: #EB1481;
   color: #161C2D;
   border-radius: 292px 33px 0 0;
   text-align: center;
@@ -13687,7 +13689,7 @@ textarea.form-con {
   width: 96px;
   height: 96px;
   background: #fff;
-  border: 5px solid #F44A4A;
+  border: 5px solid #EB1481;
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -14019,7 +14021,7 @@ textarea.form-con {
 }
 .pricing-btn-one {
   background-color: #FFF !important;
-  color: #F44A4A !important;
+  color: #EB1481 !important;
 }
 
 .badges.bg-priamry {
@@ -14028,7 +14030,7 @@ textarea.form-con {
   padding: 3px 6px;
   font-size: 12px;
   border-radius: 50em;
-  color: #f44a4a;
+  color: #EB1481;
   font-weight: 600;
   line-height: 26px;
   position: absolute;
@@ -14046,7 +14048,7 @@ textarea.form-con {
   width: 31px;
   height: 31px;
   padding: 2px 5px;
-  color: #f44a4a;
+  color: #EB1481;
   display: inline-block;
   margin-left: 3px;
 }
@@ -14734,7 +14736,7 @@ ul.form-stepper li a .form-stepper-circle {
   height: 8px !important;
   margin: 0 10px 0;
   color: var(--text-red-color);
-  background: #F44A4A;
+  background: #EB1481;
   border-radius: 100%;
 }
 .pricing-btn-one {
@@ -15724,7 +15726,7 @@ ul.form-stepper li a .form-stepper-circle {
 }
 .navigation-one .dropdown ul li:hover {
   background-color: #E6E6E6;
-  border-left: 3px solid #f44a4a;
+  border-left: 3px solid #EB1481;
 }
 .navigation-one .btn-secondary {
   padding: 0;
