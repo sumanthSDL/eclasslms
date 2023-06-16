@@ -83,7 +83,7 @@
                             </div>
                         </div>
                         
-                        @if(isset($zoom_enable) && $zoom_enable == 1)
+                        {{-- @if(isset($zoom_enable) && $zoom_enable == 1)
                         <div class="col-lg-3 col-md-6 col-12 mt-md-3">
                             <div class="card m-b-30 shadow-sm">
                                 <div class="card-body">
@@ -168,9 +168,9 @@
                                 </div>
                             </div>
                         </div>
-                        @endif
+                        @endif --}}
 
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
+                        {{-- <div class="col-lg-3 col-md-6 col-12 mt-md-3">
                             <div class="card m-b-30 shadow-sm">
                                 <div class="card-body">
                                     <div class="row align-items-center">
@@ -185,9 +185,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
+                        {{-- <div class="col-lg-3 col-md-6 col-12 mt-md-3">
                             <div class="card m-b-30 shadow-sm">
                                 <div class="card-body">
                                     <div class="row align-items-center">
@@ -202,8 +202,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
+                        </div> --}}
+                        {{-- <div class="col-lg-3 col-md-6 col-12 mt-md-3">
                             <div class="card m-b-30 shadow-sm">
                                 <div class="card-body">
                                     <div class="row align-items-center">
@@ -218,8 +218,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
+                        </div> --}}
+                        {{-- <div class="col-lg-3 col-md-6 col-12 mt-md-3">
                             <div class="card m-b-30 shadow-sm">
                                 <div class="card-body">
                                     <div class="row align-items-center">
@@ -234,8 +234,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
+                        </div> --}}
+                        {{-- <div class="col-lg-3 col-md-6 col-12 mt-md-3">
                             <div class="card m-b-30 shadow-sm">
                                 <div class="card-body">
                                     <div class="row align-items-center">
@@ -250,9 +250,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
+                        {{-- <div class="col-lg-3 col-md-6 col-12 mt-md-3">
                             <div class="card m-b-30 shadow-sm">
                                 <div class="card-body">
                                     <div class="row align-items-center">
@@ -267,8 +267,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
+                        </div> --}}
+                        {{-- <div class="col-lg-3 col-md-6 col-12 mt-md-3">
                             <div class="card m-b-30 shadow-sm">
                                 <div class="card-body">
                                     <div class="row align-items-center">
@@ -283,8 +283,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
+                        </div> --}}
+                        {{-- <div class="col-lg-3 col-md-6 col-12 mt-md-3">
                             <div class="card m-b-30 shadow-sm">
                                 <div class="card-body">
                                     <div class="row align-items-center">
@@ -296,7 +296,7 @@
                                             <a href="{{ route('follower.view') }}" title="{{ __('Followers') }}"><i
                                                 class="text-danger  feather icon-user-check icondashboard"></i></a>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>
@@ -416,7 +416,7 @@
                         </div>
                     </div>
                     @endif
-                    @if (!empty($toporder))
+                    {{-- @if (!empty($toporder))
                     <div class="col-lg-12 col-xl-3 col-md-6 mt-md-3">
                         <div class="card m-b-30">
                             <div class="card-header">
@@ -448,7 +448,7 @@
                             </div>
                         </div>
                     </div>
-                    @endif
+                    @endif --}}
                 </div>
                 <div class="row">
 

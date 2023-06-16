@@ -83,205 +83,18 @@
                             </div>
                         </div>
                         
-                        <?php if(isset($zoom_enable) && $zoom_enable == 1): ?>
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
-                            <div class="card m-b-30 shadow-sm">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col-7">
-                                            <h4><?php echo e($zoom); ?></h4>
-                                            <p class="font-14 mb-0"><?php echo e(__('Zoom Meetings')); ?></p>
-                                        </div>
-                                        <?php if(Route::has('zoom.setting')): ?>
-                                        <div class="col-5 text-right">
-                                            <a href="<?php echo e(route('zoom.setting')); ?>">
-                                                <i class="text-danger feather icon-maximize icondashboard" title="<?php echo e(__('Zoom Meetings')); ?>"></i>
-                                            </a>
-                                            </div>
-                                        <?php endif; ?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <?php endif; ?>
+                        
 
-                        <?php if(isset($gsetting) && $gsetting->bbl_enable == 1): ?>
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
-                            <div class="card m-b-30 shadow-sm">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col-6">
-                                            <h4><?php echo e($bbl); ?></h4>
-                                            <p class="font-14 mb-0"><?php echo e(__('BB Meetings')); ?></p>
-                                        </div>
-                                        <?php if(Route::has('bbl.setting')): ?>
-                                        <div class="col-6 text-right">
-                                            <a href="<?php echo e(route('bbl.setting')); ?>" title="<?php echo e(__('BB Meetings')); ?>"><i
-                                                class="text-primary feather icon-camera icondashboard"></i></a>
-                                            </div>
-                                        <?php endif; ?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <?php endif; ?>
+                        
 
-
-                        <?php if(isset($gsetting) && $gsetting->jitsimeet_enable == 1): ?>
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
-                            <div class="card m-b-30 shadow-sm">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col-6">
-                                            <h4><?php echo e($jitsi); ?></h4>
-                                            <p class="font-14 mb-0"><?php echo e(__('Jitsi Meetings')); ?></p>
-                                        </div>
-                                        <?php if(Route::has('jitsi.dashboard')): ?>
-                                        <div class="col-6 text-right">
-                                            <a href="<?php echo e(route('jitsi.dashboard')); ?>" title="<?php echo e(__('Jitsi Meetings')); ?>"><i
-                                                class="text-success feather icon-video icondashboard"></i></a>
-                                            </div>
-                                        <?php endif; ?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <?php endif; ?>
-
-                        <?php if(isset($gsetting) && $gsetting->googlemeet_enable == 1): ?>
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
-                            <div class="card m-b-30 shadow-sm">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col-6">
-                                            <h4><?php echo e($googlemeet); ?></h4>
-                                            <p class="font-14 mb-0"><?php echo e(__('Google Meetings')); ?></p>
-                                        </div>
-
-                                        <?php if(Route::has('googlemeet.index')): ?>
-                                        <div class="col-6 text-right">
-                                            <a href="<?php echo e(route('googlemeet.index')); ?>" title="<?php echo e(__('Google Meetings')); ?>"><i
-                                                class="text-warning feather icon-aperture icondashboard"></i></a>
-                                        </div>
-                                        <?php endif; ?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <?php endif; ?>
-
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
-                            <div class="card m-b-30 shadow-sm">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col-6">
-                                            <h4><?php echo e($faq); ?></h4>
-                                            <p class="font-14 mb-0"><?php echo e(__('Faq\'s')); ?></p>
-                                        </div>
-                                        <div class="col-6 text-right">
-                                            <a href="<?php echo e(route('faq.index')); ?>" title="<?php echo e(__('Faqs')); ?>"><i
-                                                class="text-secondary fa fa-question icondashboard"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
-                            <div class="card m-b-30 shadow-sm">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col-6">
-                                            <h4><?php echo e($pages); ?></h4>
-                                            <p class="font-14 mb-0"><?php echo e(__('Pages')); ?></p>
-                                        </div>
-                                        <div class="col-6 text-right">
-                                            <a href="<?php echo e(route('page.index')); ?>" title="<?php echo e(__('Pages')); ?>"><i
-                                                class="text-info feather icon-bookmark icondashboard"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
-                            <div class="card m-b-30 shadow-sm">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col-6">
-                                            <h4><?php echo e($blogs); ?></h4>
-                                            <p class="font-14 mb-0"><?php echo e(__('Blogs')); ?></p>
-                                        </div>
-                                        <div class="col-6 text-right">
-                                            <a href="<?php echo e(route('blog.index')); ?>" title="<?php echo e(__('Blogs')); ?>"><i
-                                                class="text-danger feather icon-message-square icondashboard"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
-                            <div class="card m-b-30 shadow-sm">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col-6">
-                                            <h4><?php echo e($testimonial); ?></h4>
-                                            <p class="font-14 mb-0"><?php echo e(__('Testimonials')); ?></p>
-                                        </div>
-                                        <div class="col-6 text-right">
-                                            <a href="<?php echo e(route('testimonial.index')); ?>" title="<?php echo e(__('Testimonials')); ?>"><i
-                                                class="text-primary feather icon-message-circle icondashboard"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         
                         
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
-                            <div class="card m-b-30 shadow-sm">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col-6">
-                                            <h4><?php echo e($orders); ?></h4>
-                                            <p class="font-14 mb-0"><?php echo e(__('Orders')); ?></p>
-                                        </div>
-                                        <div class="col-6 text-right">
-                                            <a href="<?php echo e(route('order.index')); ?>" title="<?php echo e(__('Orders')); ?>"><i
-                                                class="text-success feather icon-shopping-cart icondashboard"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
-                            <div class="card m-b-30 shadow-sm">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col-6">
-                                            <h4><?php echo e($refund); ?></h4>
-                                            <p class="font-14 mb-0"><?php echo e(__('Refund Orders')); ?></p>
-                                        </div>
-                                        <div class="col-6 text-right">
-                                            <a href="<?php echo e(route('refundorder.index')); ?>" title="<?php echo e(__('Refund Orders')); ?>"><i
-                                                class="text-secondary  feather icon-trending-down icondashboard"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12 mt-md-3">
-                            <div class="card m-b-30 shadow-sm">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col-6">
-                                            <h4><?php echo e($follower); ?></h4>
-                                            <p class="font-14 mb-0"><?php echo e(__('Followers')); ?></p>
-                                        </div>
-                                        <div class="col-6 text-right">
-                                            <a href="<?php echo e(route('follower.view')); ?>" title="<?php echo e(__('Followers')); ?>"><i
-                                                class="text-danger  feather icon-user-check icondashboard"></i></a>
-                                        </div>
-                                    </div>
+                        
+                        
+                        
+                        
+                        
+                        
                                 </div>
                             </div>
                         </div>
@@ -401,39 +214,7 @@
                         </div>
                     </div>
                     <?php endif; ?>
-                    <?php if(!empty($toporder)): ?>
-                    <div class="col-lg-12 col-xl-3 col-md-6 mt-md-3">
-                        <div class="card m-b-30">
-                            <div class="card-header">
-                                <div class="row align-items-center">
-                                    <div class="col-9">
-                                        <h5 class="card-title mb-0"><?php echo e(__('Recent Orders')); ?></h5>
-                                    </div>
-                                
-                                </div>
-                            </div>
-                            <div class="user-slider">
-                                <?php $__currentLoopData = $toporder; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $toporders): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                <?php if(!is_null($toporders->user)): ?>
-                                <div class="user-slider">
-                                    <div class="user-slider-item">
-                                        <div class="card-body text-center">
-                                            <span class="action-icon badge badge-primary-inverse"><img
-                                                    src="<?php echo e(Avatar::create($toporders->user->fname)->toBase64()); ?>"
-                                                    class="dashboard-imgs" alt="<?php echo e($toporders->user->fname); ?>"></span>
-                                            <h5><?php echo e($toporders->user->fname); ?></h5>
-                                            <p><?php echo e($toporders->payment_method); ?></p>
-                                            <p><span class="badge badge-primary-inverse"><?php echo e(__('Price')); ?>:<?php echo e($toporders->total_amount); ?></span>
-                                            </p>                                            
-                                        </div>                                        
-                                    </div>
-                                </div>
-                                <?php endif; ?>
-                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                            </div>
-                        </div>
-                    </div>
-                    <?php endif; ?>
+                    
                 </div>
                 <div class="row">
 
