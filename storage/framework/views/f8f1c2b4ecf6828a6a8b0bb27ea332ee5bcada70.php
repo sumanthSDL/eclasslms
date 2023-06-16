@@ -27,14 +27,7 @@
                                 </a>
                             </li>
                             
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['marketing-dashboard.manage'])): ?>
-                            <li class="<?php echo e(Nav::isRoute('market.index')); ?>">
-                                <a class="nav-link" href="<?php echo e(route('market.index')); ?>">
-                                    <i class="feather icon-activity text-secondary"></i>
-                                    <span><?php echo e(__('Marketing Dashboard')); ?></span>
-                                </a>
-                            </li>
-                            <?php endif; ?>
+                            
                             <!-- dashboard end -->
                             <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->any(['users.view','Alluser.view','Allinstructor.view'])): ?>
                             <li class="header"><?php echo e(__('Users')); ?></li>
@@ -69,73 +62,7 @@
                             <?php endif; ?>
 
 
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->any(['instructorrequest.view','instructor-pending-request.manage','instructor-plan-subscription.view'])): ?>
-                            <li class="<?php echo e(Nav::isResource('plan/subscribe/settings')); ?> <?php echo e(Nav::isResource('subscription/plan')); ?>  <?php echo e(Nav::isRoute('all.instructor')); ?> <?php echo e(Nav::isResource('requestinstructor')); ?>">
-                                <a href="javaScript:void();" class="menu"><i class="feather icon-user text-secondary"></i>
-                                    <span><?php echo e(__('Instructors')); ?><div class="sub-menu truncate"><?php echo e(__('All Instructor Request, Pending Request, Instructor Subscription, Instructor Plan, Multiple Instructor, Instructor Payout')); ?></div></span>
-                                    <i class="feather icon-chevron-right"></i>
-                                </a>
-                                <ul class="vertical-submenu">
-                                    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('instructorrequest.view')): ?>
-                                    <li class="<?php echo e(Nav::isRoute('all.instructor')); ?>"><a
-                                            href="<?php echo e(route('all.instructor')); ?>"><?php echo e(__('All')); ?>
-
-                                            <?php echo e(__('Instructor Request')); ?></a></li>
-                                            <?php endif; ?>
-                                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check('instructor-plan-subscription.view')): ?>
-                                    <li class="<?php echo e(Nav::isResource('plan/subscribe/settings')); ?>"><a
-                                            href="<?php echo e(url('plan/subscribe/settings')); ?>"><?php echo e(__('Instructor')); ?>
-
-                                            <?php echo e(__('Subscription')); ?></a></li>
-                                            <?php endif; ?>
-                                    <?php if(env('ENABLE_INSTRUCTOR_SUBS_SYSTEM') == 1): ?>
-                                    <li class="<?php echo e(Nav::isResource('subscription/plan')); ?>"><a
-                                            href="<?php echo e(url('subscription/plan')); ?>"><?php echo e(__('Instructor Plan')); ?></a>
-                                    </li>
-                                    <?php endif; ?>
-                                    <!-- MultipleInstructor start  -->
-                                    <li
-                                        class="<?php echo e(Nav::isRoute('allrequestinvolve')); ?> <?php echo e(Nav::isRoute('involve.request.index')); ?> <?php echo e(Nav::isRoute('involve.request')); ?>">
-                                        <a href="javaScript:void();">
-                                            <span><?php echo e(__('Multiple Instructor')); ?></span>
-                                        </a>
-                                        <ul class="vertical-submenu">
-
-                                            <li class="<?php echo e(Nav::isRoute('allrequestinvolve')); ?>"><a
-                                                    href="<?php echo e(route('allrequestinvolve')); ?>"><?php echo e(__('Request to Involve')); ?></a>
-                                            </li>
-                                            <li class="<?php echo e(Nav::isRoute('involve.request.index')); ?>"><a
-                                                    href="<?php echo e(route('involve.request.index')); ?>"><?php echo e(__('Involvement Requests')); ?></a>
-                                            </li>
-                                            <li class="<?php echo e(Nav::isRoute('involve.request')); ?>"><a
-                                                    href="<?php echo e(route('involve.request')); ?>"><?php echo e(__('Involved In Course')); ?></a>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-                                    <!-- MultipleInstructor end  -->
-                                    <!-- InstructorPayout start  -->
-                                    <li
-                                        class="<?php echo e(Nav::isRoute('instructor.settings')); ?> <?php echo e(Nav::isRoute('admin.instructor')); ?> <?php echo e(Nav::isRoute('admin.completed')); ?>">
-                                        <a href="javaScript:void();">
-                                            <span><?php echo e(__('Instructor Payout')); ?></span>
-                                        </a>
-                                        <ul class="vertical-submenu">
-
-                                            <li class="<?php echo e(Nav::isRoute('instructor.settings')); ?>"><a
-                                                    href="<?php echo e(route('instructor.settings')); ?>"><?php echo e(__('Payout Settings')); ?></a>
-                                            </li>
-                                            <li class="<?php echo e(Nav::isRoute('admin.instructor')); ?>"><a
-                                                    href="<?php echo e(route('admin.instructor')); ?>"><?php echo e(__('Payout')); ?></a>
-                                            </li>
-
-
-                                        </ul>
-                                    </li>
-                                    <!-- InstructorPayout end  -->
-                                </ul>
-                            </li>
-                            <?php endif; ?>
+                            
 
 
                             <!-- user end -->
@@ -255,113 +182,7 @@
                             <?php endif; ?>
                             <!--=================== Course end====================================  -->
                             <!-- ====================Meetings start======================== -->
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->any(['meetings.zoom-meetings.view','meetings.big-blue.view','meetings.google-meet.view','meetings.jitsi-meet.view','meetings.google-classroom.view','meetings.meeting-recordings.view'])): ?>
-                            <li class="<?php echo e(Nav::isRoute('meeting.create')); ?> <?php echo e(Nav::isRoute('zoom.show')); ?> <?php echo e(Nav::isRoute('zoom.edit')); ?> <?php echo e(Nav::isRoute('zoom.setting')); ?> <?php echo e(Nav::isRoute('zoom.index')); ?> <?php echo e(Nav::isRoute('meeting.show')); ?> <?php echo e(Nav::isRoute('bbl.setting')); ?> <?php echo e(Nav::isRoute('bbl.all.meeting')); ?> <?php echo e(Nav::isRoute('download.meeting')); ?> <?php echo e(Nav::isRoute('googlemeet.setting')); ?> <?php echo e(Nav::isRoute('googlemeet.index')); ?> <?php echo e(Nav::isRoute('googlemeet.allgooglemeeting')); ?> <?php echo e(Nav::isRoute('jitsi.dashboard')); ?> <?php echo e(Nav::isRoute('jitsi.create')); ?> <?php echo e(Nav::isResource('meeting-recordings')); ?>">
-                                <a href="javaScript:void();" class="menu"><i class="feather icon-clock text-secondary"></i>
-                                    <span><?php echo e(__('Meetings')); ?><div class="sub-menu truncate">Zoom Meetings, Big Blue, Google Meet, Jitsi Meeting, Meeting Recordings</div></span>
-                                    <i class="feather icon-chevron-right"></i>
-                                </a>
-                                <ul class="vertical-submenu">
-                                    <!-- ZoomLiveMeetings start  -->
-                                    <?php if(isset($zoom_enable) && $zoom_enable == 1): ?>
-                                    <li
-                                        class="<?php echo e(Nav::isRoute('meeting.create')); ?> <?php echo e(Nav::isRoute('zoom.show')); ?> <?php echo e(Nav::isRoute('zoom.edit')); ?> <?php echo e(Nav::isRoute('zoom.setting')); ?> <?php echo e(Nav::isRoute('zoom.index')); ?> <?php echo e(Nav::isRoute('meeting.show')); ?>">
-                                        <a href="javaScript:void();">
-                                            <i class=""></i> <span><?php echo e(__('Zoom Meetings')); ?></span><i
-                                                class="feather icon-chevron-right"></i>
-                                        </a>
-                                        <ul class="vertical-submenu">
-                                            <li class="<?php echo e(Nav::isRoute('zoom.setting')); ?>"><a
-                                                    href="<?php echo e(route('zoom.setting')); ?>"><?php echo e(__('Settings')); ?></a>
-                                            </li>
-                                            <li
-                                                class="<?php echo e(Nav::isRoute('zoom.index')); ?> <?php echo e(Nav::isRoute('zoom.show')); ?> <?php echo e(Nav::isRoute('zoom.edit')); ?> <?php echo e(Nav::isRoute('meeting.create')); ?>">
-                                                <a href="<?php echo e(route('zoom.index')); ?>"><?php echo e(__('Dashboard')); ?></a>
-                                            </li>
-
-                                            <li class="<?php echo e(Nav::isRoute('meeting.show')); ?>"><a
-                                                    href="<?php echo e(route('meeting.show')); ?>"><?php echo e(__('All Meetings')); ?></a>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-                                    <?php endif; ?>
-                                    <!-- ZoomLiveMeetings end  -->
-                                    <!-- BigBlueMeetings start  -->
-                                    <?php if(isset($gsetting) && $gsetting->bbl_enable == 1): ?>
-                                    <li
-                                        class="<?php echo e(Nav::isRoute('bbl.setting')); ?> <?php echo e(Nav::isRoute('bbl.all.meeting')); ?> <?php echo e(Nav::isRoute('download.meeting')); ?>">
-                                        <a href="javaScript:void();">
-                                            <i class=""></i> <span><?php echo e(__('Big Blue')); ?></span><i
-                                                class="feather icon-chevron-right"></i>
-                                        </a>
-                                        <ul class="vertical-submenu">
-
-                                            <li class="<?php echo e(Nav::isRoute('bbl.setting')); ?>"><a
-                                                    href="<?php echo e(route('bbl.setting')); ?>"><?php echo e(__('Settings')); ?></a>
-                                            </li>
-                                            <li class="<?php echo e(Nav::isRoute('bbl.all.meeting')); ?>"><a
-                                                    href="<?php echo e(route('bbl.all.meeting')); ?>"><?php echo e(__('List Meetings')); ?></a>
-                                            </li>
-                                            <li class="<?php echo e(Nav::isRoute('download.meeting')); ?>"><a
-                                                    href="<?php echo e(route('download.meeting')); ?>"><?php echo e(__('Recorded')); ?></a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <?php endif; ?>
-                                    <!-- BigBlueMeetings end  -->
-
-                                    <!-- Google Meet Meeting start  -->
-                                    <?php if(isset($gsetting) && $gsetting->googlemeet_enable == 1): ?>
-                                    <li
-                                        class="<?php echo e(Nav::isRoute('googlemeet.setting')); ?> <?php echo e(Nav::isRoute('googlemeet.index')); ?> <?php echo e(Nav::isRoute('googlemeet.allgooglemeeting')); ?>">
-                                        <a href="javaScript:void();">
-                                            <i class=""></i> <span><?php echo e(__('Google Meet')); ?></span><i
-                                                class="feather icon-chevron-right"></i>
-                                        </a>
-                                        <ul class="vertical-submenu">
-
-                                            <li class="<?php echo e(Nav::isRoute('googlemeet.setting')); ?>"><a
-                                                    href="<?php echo e(route('googlemeet.setting')); ?>"><?php echo e(__('Settings')); ?></a>
-                                            </li>
-                                            <li class="<?php echo e(Nav::isRoute('googlemeet.index')); ?>"><a
-                                                    href="<?php echo e(route('googlemeet.index')); ?>"><?php echo e(__('Dashboard')); ?></a>
-                                            </li>
-                                            <li class="<?php echo e(Nav::isRoute('googlemeet.allgooglemeeting')); ?>"><a
-                                                    href="<?php echo e(route('googlemeet.allgooglemeeting')); ?>"><?php echo e(__('All Meetings')); ?></a>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-                                    <?php endif; ?>
-                                    <!-- Google Meet Meeting end  -->
-
-                                    <!-- Jitsi Meeting start -->
-                                    <?php if(isset($gsetting) && $gsetting->jitsimeet_enable == 1): ?>
-                                    <li
-                                        class="<?php echo e(Nav::isRoute('jitsi.dashboard')); ?> <?php echo e(Nav::isRoute('jitsi.create')); ?>">
-                                        <a href="javaScript:void();">
-                                            <i class=""></i> <span><?php echo e(__('Jitsi Meeting')); ?></span><i
-                                                class="feather icon-chevron-right"></i>
-                                        </a>
-                                        <ul class="vertical-submenu">
-                                            <li class="<?php echo e(Nav::isRoute('jitsi.dashboard')); ?>"><a
-                                                    href="<?php echo e(route('jitsi.dashboard')); ?>"><?php echo e(__('Dashboard')); ?></a></li>
-                                        </ul>
-                                    </li>
-                                    <?php endif; ?>
-
-                                    <?php if(Module::find('Googleclassroom') && Module::find('googleclassroom')->isEnabled()): ?>
-                                    <?php echo $__env->make('googleclassroom::layouts.admin_sidebar_menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                                    <?php endif; ?>
-                                    <!-- Jitsi Meeting end -->
-                                    <li class="<?php echo e(Nav::isResource('meeting-recordings')); ?>"><a
-                                            href="<?php echo e(url('meeting-recordings')); ?>"><span><?php echo e(__('Meeting Recordings')); ?></span></a>
-                                    </li>
-
-                                </ul>
-                            </li>
-                            <?php endif; ?>
+                            
 
                             <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['institute.view'])): ?>
                             <li>
@@ -373,7 +194,7 @@
 
                             <li>
                                 <a href="<?php echo e(url('alumini')); ?>" class="menu"><i class="feather icon-user-check text-secondary"></i>
-                                    <span><?php echo e(__('Alumini')); ?></span>
+                                    <span><?php echo e(__('Alumni')); ?></span>
                                 </a>
                             </li>
                             <li class="<?php echo e(Nav::isRoute('certificate.index')); ?> <?php echo e(Nav::isRoute('create.certificate')); ?> <?php echo e(Nav::isRoute('certificate.setting')); ?>">
@@ -412,49 +233,8 @@
                             </li>
                             
                             <?php endif; ?>
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['followers.manage'])): ?>
-                            <li class="<?php echo e(Nav::isRoute('follower.view')); ?>">
-                                <a href="<?php echo e(route('follower.view')); ?>" class="menu">
-                                    <i class="feather icon-help-circle text-secondary"></i><span><?php echo e(__('Followers')); ?></span>
-                                </a>
-                            </li>
-                            <?php endif; ?>
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->any(['affiliate.manage',' wallet-setting.manage','wallet-transactions.manage'])): ?>
-                            <li class="<?php echo e(Nav::isRoute('save.affiliates')); ?> <?php echo e(Nav::isRoute('wallet.settings')); ?> <?php echo e(Nav::isRoute('wallet.transactions')); ?>">
-                                <a href="javaScript:void();" class="menu">
-                                    <i class="feather icon-dollar-sign text-secondary"></i>
-                                    <span><?php echo e(__('Affiliate & Wallet')); ?>
-
-                                        <div class="sub-menu truncate">Affiliate, Wallet</div>
-                                    </span>
-                                    <i class="feather icon-chevron-right"></i>
-                                </a>
-                                <ul class="vertical-submenu">
-
-                                    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['affiliate.manage'])): ?>
-                                    <li class="<?php echo e(Nav::isRoute('save.affiliates')); ?>">
-                                        <a href="<?php echo e(route('save.affiliates')); ?>"><?php echo e(__('Affiliate')); ?></a>
-                                    </li>
-                                    <?php endif; ?>
-                                    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['wallet-setting.manage'])): ?>
-                                    <li class="<?php echo e(Nav::isRoute('wallet.settings')); ?>"><a
-                                            href="<?php echo e(route('wallet.settings')); ?>"><?php echo e(__('Wallet')); ?>
-
-                                            <?php echo e(__('Setting')); ?></a>
-                                    </li>
-                                    <?php endif; ?>
-                                    <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['wallet-transactions.manage'])): ?>
-                                    <li class="<?php echo e(Nav::isRoute('wallet.transactions')); ?>"><a
-                                            href="<?php echo e(route('wallet.transactions')); ?>"><?php echo e(__('Wallet')); ?>
-
-                                            <?php echo e(__('Transactions')); ?></a>
-                                    </li>
-                                    <?php endif; ?>
-                                    </li>
-
-                                </ul>
-                            </li>
-                            <?php endif; ?>
+                            
+                            
                             <!-- PushNotification -->
                             <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['push-notification.manage'])): ?>
                             <li class="<?php echo e(Nav::isRoute('onesignal.settings')); ?>">
@@ -466,14 +246,7 @@
                             <?php endif; ?>
 
 
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['flash-deals.view'])): ?>
-                            <li class="<?php echo e(Nav::isResource('admin/flash-sales')); ?>">
-                                <a href="<?php echo e(url('admin/flash-sales')); ?>" class="menu">
-                                    <i class="feather icon-clock text-secondary"></i>
-                                    <span><?php echo e(__('Flash Deals')); ?></span>
-                                </a>
-                            </li>
-                            <?php endif; ?>
+                            
 
 
 
@@ -483,25 +256,14 @@
                             <li class="<?php echo e(Nav::isResource('attandance')); ?>">
                                 <a href="<?php echo e(url('attandance')); ?>" class="menu">
                                     <i class="feather icon-user text-secondary"></i>
-                                    <span><?php echo e(__('Attandance')); ?></span>
+                                    <span><?php echo e(__('Attendance')); ?></span>
                                 </a>
                             </li>
                             <?php endif; ?>
                             <?php endif; ?>
 
                             <!-- coupon -->
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['orders.manage'])): ?>
-
-                            <li class="header"><?php echo e(__('Financial')); ?></li>
-
-                            <!-- order -->
-                            <li class="<?php echo e(Nav::isResource('order')); ?>">
-                                <a href="<?php echo e(url('order')); ?>" class="menu">
-                                    <i class="feather icon-shopping-cart text-secondary"></i>
-                                    <span><?php echo e(__('Order')); ?></span>
-                                </a>
-                            </li>
-                            <?php endif; ?>
+                            
 
                             <!-- order -->
 
@@ -511,25 +273,10 @@
                             <?php if(Module::has('Chatboard') && Module::find('Chatboard')->isEnabled()): ?>
                             <?php echo $__env->make('chatboard::front.icon', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                             <?php endif; ?>
-                            
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['blogs.view'])): ?>
-                            <li class="<?php echo e(Nav::isResource('blog')); ?>">
-                                <a href="<?php echo e(url('blog')); ?>" class="menu">
-                                    <i class="feather icon-message-square text-secondary"></i>
-                                    <span><?php echo e(__('Blogs')); ?></span>
-                                </a>
-                            </li>
-                            <?php endif; ?>
+
                            
                             <!-- pages start -->
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['pages.view'])): ?>
-                            <li class="<?php echo e(Nav::isResource('page')); ?>">
-                                <a href="<?php echo e(url('page')); ?>" class="menu">
-                                    <i class="feather icon-file-text text-secondary"></i>
-                                    <span><?php echo e(__('Pages')); ?></span>
-                                </a> 
-                            </li>
-                            <?php endif; ?>
+                            
                             <!-- pages end -->
                             <!-- report start  -->
                             <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->any(['report.progress-report.manage','report.quiz-report.manage','report.revenue-admin-report.manage','report.revenue-instructor-report.manage'])): ?>
@@ -610,26 +357,7 @@
                             </li>
                             <?php endif; ?>
                             <!-- faq start  -->
-                            <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->any(['faq.faq-student.view','faq.faq-instructor.view'])): ?>
-                            <li class="<?php echo e(Nav::isResource('faq')); ?> <?php echo e(Nav::isResource('faqinstructor')); ?>">
-                                <a href="javaScript:void();" class="menu">
-                                    <i class="feather icon-help-circle text-secondary"></i>
-                                    <span><?php echo e(__('Faq')); ?><div class="sub-menu truncate">Faq Student, Faq Instructor</div></span>
-                                    <i class="feather icon-chevron-right"></i>
-                                </a>
-                                <ul class="vertical-submenu">
-
-                                    <li class="<?php echo e(Nav::isResource('faq')); ?>">
-                                        <a href="<?php echo e(url('faq')); ?>"><?php echo e(__('Faq Student')); ?></a>
-                                    </li>
-
-                                    <li class="<?php echo e(Nav::isResource('faqinstructor')); ?>">
-                                        <a href="<?php echo e(url('faqinstructor')); ?>"><?php echo e(__('Faq Instructor')); ?></a>
-                                    </li>
-
-                                </ul>
-                            </li>
-                            <?php endif; ?>
+                            
                             <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['career.manage'])): ?>
                             <li class="<?php echo e(Nav::isRoute('careers.page')); ?>">
                                 <a href="<?php echo e(route('careers.page')); ?>" class="menu">

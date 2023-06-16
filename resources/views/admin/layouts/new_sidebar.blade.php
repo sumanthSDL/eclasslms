@@ -27,14 +27,14 @@
                                 </a>
                             </li>
                             
-                            @can(['marketing-dashboard.manage'])
+                            {{-- @can(['marketing-dashboard.manage'])
                             <li class="{{ Nav::isRoute('market.index') }}">
                                 <a class="nav-link" href="{{route('market.index')}}">
                                     <i class="feather icon-activity text-secondary"></i>
                                     <span>{{ __('Marketing Dashboard') }}</span>
                                 </a>
                             </li>
-                            @endcan
+                            @endcan --}}
                             <!-- dashboard end -->
                             @canany(['users.view','Alluser.view','Allinstructor.view'])
                             <li class="header">{{ __('Users') }}</li>
@@ -69,7 +69,7 @@
                             @endcanany
 
 
-                            @canany(['instructorrequest.view','instructor-pending-request.manage','instructor-plan-subscription.view'])
+                            {{-- @canany(['instructorrequest.view','instructor-pending-request.manage','instructor-plan-subscription.view'])
                             <li class="{{ Nav::isResource('plan/subscribe/settings') }} {{ Nav::isResource('subscription/plan') }}  {{ Nav::isRoute('all.instructor') }} {{ Nav::isResource('requestinstructor') }}">
                                 <a href="javaScript:void();" class="menu"><i class="feather icon-user text-secondary"></i>
                                     <span>{{ __('Instructors') }}<div class="sub-menu truncate">{{__('All Instructor Request, Pending Request, Instructor Subscription, Instructor Plan, Multiple Instructor, Instructor Payout')}}</div></span>
@@ -133,7 +133,7 @@
                                     <!-- InstructorPayout end  -->
                                 </ul>
                             </li>
-                            @endcanany
+                            @endcanany --}}
 
 
                             <!-- user end -->
@@ -250,7 +250,7 @@
                             @endif
                             <!--=================== Course end====================================  -->
                             <!-- ====================Meetings start======================== -->
-                            @canany(['meetings.zoom-meetings.view','meetings.big-blue.view','meetings.google-meet.view','meetings.jitsi-meet.view','meetings.google-classroom.view','meetings.meeting-recordings.view'])
+                            {{-- @canany(['meetings.zoom-meetings.view','meetings.big-blue.view','meetings.google-meet.view','meetings.jitsi-meet.view','meetings.google-classroom.view','meetings.meeting-recordings.view'])
                             <li class="{{ Nav::isRoute('meeting.create') }} {{ Nav::isRoute('zoom.show') }} {{ Nav::isRoute('zoom.edit') }} {{ Nav::isRoute('zoom.setting') }} {{ Nav::isRoute('zoom.index') }} {{ Nav::isRoute('meeting.show') }} {{ Nav::isRoute('bbl.setting') }} {{ Nav::isRoute('bbl.all.meeting') }} {{ Nav::isRoute('download.meeting') }} {{ Nav::isRoute('googlemeet.setting') }} {{ Nav::isRoute('googlemeet.index') }} {{ Nav::isRoute('googlemeet.allgooglemeeting') }} {{ Nav::isRoute('jitsi.dashboard') }} {{ Nav::isRoute('jitsi.create') }} {{ Nav::isResource('meeting-recordings') }}">
                                 <a href="javaScript:void();" class="menu"><i class="feather icon-clock text-secondary"></i>
                                     <span>{{ __('Meetings') }}<div class="sub-menu truncate">Zoom Meetings, Big Blue, Google Meet, Jitsi Meeting, Meeting Recordings</div></span>
@@ -356,7 +356,7 @@
 
                                 </ul>
                             </li>
-                            @endcanany
+                            @endcanany --}}
 
                             @can(['institute.view'])
                             <li>
@@ -368,7 +368,7 @@
 
                             <li>
                                 <a href="{{url('alumini')}}" class="menu"><i class="feather icon-user-check text-secondary"></i>
-                                    <span>{{ __('Alumini') }}</span>
+                                    <span>{{ __('Alumni') }}</span>
                                 </a>
                             </li>
                             <li class="{{ Nav::isRoute('certificate.index') }} {{ Nav::isRoute('create.certificate') }} {{ Nav::isRoute('certificate.setting') }}">
@@ -407,14 +407,14 @@
                             </li>
                             
                             @endcan
-                            @can(['followers.manage'])
+                            {{-- @can(['followers.manage'])
                             <li class="{{ Nav::isRoute('follower.view') }}">
                                 <a href="{{route('follower.view')}}" class="menu">
                                     <i class="feather icon-help-circle text-secondary"></i><span>{{ __('Followers') }}</span>
                                 </a>
                             </li>
-                            @endcan
-                            @canany(['affiliate.manage',' wallet-setting.manage','wallet-transactions.manage'])
+                            @endcan --}}
+                            {{-- @canany(['affiliate.manage',' wallet-setting.manage','wallet-transactions.manage'])
                             <li class="{{ Nav::isRoute('save.affiliates') }} {{ Nav::isRoute('wallet.settings') }} {{ Nav::isRoute('wallet.transactions') }}">
                                 <a href="javaScript:void();" class="menu">
                                     <i class="feather icon-dollar-sign text-secondary"></i>
@@ -446,7 +446,7 @@
 
                                 </ul>
                             </li>
-                            @endcanany
+                            @endcanany --}}
                             <!-- PushNotification -->
                             @can(['push-notification.manage'])
                             <li class="{{ Nav::isRoute('onesignal.settings') }}">
@@ -458,14 +458,14 @@
                             @endcan
 
 
-                            @can(['flash-deals.view'])
+                            {{-- @can(['flash-deals.view'])
                             <li class="{{ Nav::isResource('admin/flash-sales') }}">
                                 <a href="{{url('admin/flash-sales')}}" class="menu">
                                     <i class="feather icon-clock text-secondary"></i>
                                     <span>{{ __('Flash Deals') }}</span>
                                 </a>
                             </li>
-                            @endcan
+                            @endcan --}}
 
 
 
@@ -475,14 +475,14 @@
                             <li class="{{ Nav::isResource('attandance') }}">
                                 <a href="{{url('attandance')}}" class="menu">
                                     <i class="feather icon-user text-secondary"></i>
-                                    <span>{{ __('Attandance') }}</span>
+                                    <span>{{ __('Attendance') }}</span>
                                 </a>
                             </li>
                             @endif
                             @endcan
 
                             <!-- coupon -->
-                            @can(['orders.manage'])
+                            {{-- @can(['orders.manage'])
 
                             <li class="header">{{ __('Financial') }}</li>
 
@@ -493,7 +493,7 @@
                                     <span>{{ __('Order') }}</span>
                                 </a>
                             </li>
-                            @endcan
+                            @endcan --}}
 
                             <!-- order -->
 
@@ -503,7 +503,7 @@
                             @if(Module::has('Chatboard') && Module::find('Chatboard')->isEnabled())
                             @include('chatboard::front.icon')
                             @endif
-                            
+{{--                             
                             @can(['blogs.view'])
                             <li class="{{ Nav::isResource('blog') }}">
                                 <a href="{{url('blog')}}" class="menu">
@@ -511,17 +511,17 @@
                                     <span>{{ __('Blogs') }}</span>
                                 </a>
                             </li>
-                            @endcan
+                            @endcan --}}
                            
                             <!-- pages start -->
-                            @can(['pages.view'])
+                            {{-- @can(['pages.view'])
                             <li class="{{ Nav::isResource('page') }}">
                                 <a href="{{url('page')}}" class="menu">
                                     <i class="feather icon-file-text text-secondary"></i>
                                     <span>{{ __('Pages') }}</span>
                                 </a> 
                             </li>
-                            @endcan
+                            @endcan --}}
                             <!-- pages end -->
                             <!-- report start  -->
                             @canany(['report.progress-report.manage','report.quiz-report.manage','report.revenue-admin-report.manage','report.revenue-instructor-report.manage'])
@@ -602,7 +602,7 @@
                             </li>
                             @endcan
                             <!-- faq start  -->
-                            @canany(['faq.faq-student.view','faq.faq-instructor.view'])
+                            {{-- @canany(['faq.faq-student.view','faq.faq-instructor.view'])
                             <li class="{{ Nav::isResource('faq') }} {{ Nav::isResource('faqinstructor') }}">
                                 <a href="javaScript:void();" class="menu">
                                     <i class="feather icon-help-circle text-secondary"></i>
@@ -621,7 +621,7 @@
 
                                 </ul>
                             </li>
-                            @endcanany
+                            @endcanany --}}
                             @can(['career.manage'])
                             <li class="{{ Nav::isRoute('careers.page') }}">
                                 <a href="{{route('careers.page')}}" class="menu">
