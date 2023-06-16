@@ -72,7 +72,7 @@
                             <!-- ====================Course start======================== -->
                             <li class="<?php echo e(Nav::isResource('category')); ?> <?php echo e(Nav::isResource('subcategory')); ?> <?php echo e(Nav::isResource('childcategory')); ?> <?php echo e(Nav::isResource('course')); ?> <?php echo e(Nav::isResource('bundle')); ?> <?php echo e(Nav::isResource('courselang')); ?> <?php echo e(Nav::isResource('coursereview')); ?> <?php echo e(Nav::isRoute('assignment.view')); ?> <?php echo e(Nav::isResource('refundpolicy')); ?> <?php echo e(Nav::isResource('batch')); ?> <?php echo e(Nav::isRoute('quiz.review')); ?> <?php echo e(Nav::isResource('private-course')); ?> <?php echo e(Nav::isResource('admin/report/view')); ?> <?php echo e(Nav::isResource('user/question/report')); ?>">
                                 <a href="javaScript:void();" class="menu"><i class="feather icon-book text-secondary"></i>
-                                    <span><?php echo e(__('Course')); ?><div class="sub-menu truncate">Categories, Courses, Bundle Course, Course Language, Course Review, Assignment, Refund Policy, Batch, Quiz Review, Private Course, Reported Course, Reported Question</div></span>
+                                    <span><?php echo e(__('Course')); ?><div class="sub-menu truncate"> Course categories, Courses, Bundle Course, Course Language, Course Review, Assignment, Refund Policy, Batch, Quiz Review, Private Course, Reported Course, Reported Question</div></span>
                                     <i class="feather icon-chevron-right"></i>
                                 </a>
                                 <ul class="vertical-submenu">
@@ -86,12 +86,12 @@
                                         <ul class="vertical-submenu">
                                             <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['categories.view'])): ?>
                                             <li class="<?php echo e(Nav::isResource('category')); ?>"><a
-                                                    href="<?php echo e(url('category')); ?>"><?php echo e(__('Category')); ?></a>
+                                                    href="<?php echo e(url('category')); ?>"><?php echo e(__('Course category')); ?></a>
                                             </li>
                                             <?php endif; ?>
                                             <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['subcategories.view'])): ?>
                                             <li class="<?php echo e(Nav::isResource('subcategory')); ?>"><a
-                                                    href="<?php echo e(url('subcategory')); ?>"><?php echo e(__('SubCategory')); ?></a>
+                                                    href="<?php echo e(url('subcategory')); ?>"><?php echo e(__('Sub Category')); ?></a>
                                             </li>
                                             <?php endif; ?>
                                             <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['childcategories.view'])): ?>

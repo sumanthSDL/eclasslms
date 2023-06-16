@@ -143,7 +143,7 @@
                             <!-- ====================Course start======================== -->
                             <li class="{{ Nav::isResource('category') }} {{ Nav::isResource('subcategory') }} {{ Nav::isResource('childcategory') }} {{ Nav::isResource('course') }} {{ Nav::isResource('bundle') }} {{ Nav::isResource('courselang') }} {{ Nav::isResource('coursereview') }} {{ Nav::isRoute('assignment.view') }} {{ Nav::isResource('refundpolicy') }} {{ Nav::isResource('batch') }} {{ Nav::isRoute('quiz.review') }} {{ Nav::isResource('private-course') }} {{ Nav::isResource('admin/report/view') }} {{ Nav::isResource('user/question/report') }}">
                                 <a href="javaScript:void();" class="menu"><i class="feather icon-book text-secondary"></i>
-                                    <span>{{ __('Course') }}<div class="sub-menu truncate">Categories, Courses, Bundle Course, Course Language, Course Review, Assignment, Refund Policy, Batch, Quiz Review, Private Course, Reported Course, Reported Question</div></span>
+                                    <span>{{ __('Course') }}<div class="sub-menu truncate"> Course categories, Courses, Bundle Course, Course Language, Course Review, Assignment, Refund Policy, Batch, Quiz Review, Private Course, Reported Course, Reported Question</div></span>
                                     <i class="feather icon-chevron-right"></i>
                                 </a>
                                 <ul class="vertical-submenu">
@@ -157,12 +157,12 @@
                                         <ul class="vertical-submenu">
                                             @can(['categories.view'])
                                             <li class="{{ Nav::isResource('category') }}"><a
-                                                    href="{{url('category')}}">{{ __('Category') }}</a>
+                                                    href="{{url('category')}}">{{ __('Course category') }}</a>
                                             </li>
                                             @endcan
                                             @can(['subcategories.view'])
                                             <li class="{{ Nav::isResource('subcategory') }}"><a
-                                                    href="{{url('subcategory')}}">{{ __('SubCategory') }}</a>
+                                                    href="{{url('subcategory')}}">{{ __('Sub Category') }}</a>
                                             </li>
                                             @endcan
                                             @can(['childcategories.view'])

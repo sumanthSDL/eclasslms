@@ -643,7 +643,9 @@ sup.redstar {
   width: 250px;
 }
 .nav-bar-main-block .logo a img {
-  width: 100px;
+  width: 100px !important;
+  height:70px !important;
+
 }
 .nav-bar-main-block .logo .img-fluid {
   max-width: 100px;
