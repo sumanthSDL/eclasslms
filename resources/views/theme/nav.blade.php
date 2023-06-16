@@ -570,7 +570,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-1 col-md-1 col-sm-2 col-2">
+                            {{-- <div class="col-lg-1 col-md-1 col-sm-2 col-2">
                                 <div class="nav-wishlist">
                                     <a href="{{ route('wishlist.show') }}" title="Go to Wishlist"><i
                                             data-feather="heart"></i></a>
@@ -594,8 +594,8 @@
                                         @endphp
                                     </span>
                                 </div>
-                            </div>
-                            <div class="col-lg-1 col-md-1 col-sm-2 col-2">
+                            </div> --}}
+                            {{-- <div class="col-lg-1 col-md-1 col-sm-2 col-2">
                                 <div class="shopping-cart">
                                     <a href="{{ route('cart.show') }}" title="Cart"><i
                                             data-feather="shopping-cart"></i></a>
@@ -610,7 +610,7 @@
                                         @endphp
                                     </span>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="col-lg-1 col-md-1 col-sm-2 col-2">
                                 <div class="search search-one" id="search">
                                     <form method="GET" id="searchform" action="{{ route('search') }}">
@@ -631,7 +631,7 @@
                                     $pages = App\Page::get();
                                 @endphp
                                 <div class="navigation navigation-one">
-                                    <div class="dropdown">
+                                    {{-- <div class="dropdown">
                                         <button class="btn btn-secondary dropdown-toggle" type="button"
                                             data-toggle="dropdown" aria-expanded="false">
                                             <i data-feather="align-justify"></i>
@@ -651,7 +651,7 @@
                                                 @endif
                                             @endforeach
                                         </ul>
-                                    </div>
+                                    </div> --}}
                                     {{-- <div id="cssmenu">
                                 <ul>
                                     <li><a><i data-feather="align-justify"></i></a>
