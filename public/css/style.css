@@ -10765,7 +10765,7 @@ svg.feather {
   border: 1px solid #FFF;
 }
 .recommendations-block {
-  background-color: #EB1481;
+  background-color: #55A6BB  ;
   height: 320px;
   padding: 89px 75px;
   color: #FFF;
@@ -12064,9 +12064,9 @@ svg.feather {
 .testimonial-block:hover {
   border: 2px solid #EB1481;
   border-radius: 6px;
-  /*background-image: linear-gradient(white, white), linear-gradient(197.61deg, #EB1481 , #6e1a52);
+  background-image: linear-gradient(white, white), linear-gradient(197.61deg, #EB1481 , #6e1a52);
   background-origin: border-box;
-  background-clip: content-box, border-box;*/
+  background-clip: content-box, border-box;
   transform: translateY(-25px);
   transition: all .5s ease;
 }
@@ -15169,10 +15169,10 @@ ul.form-stepper li a .form-stepper-circle {
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease; 
 }
-.testimonial-slider-main-block.owl-carousel .owl-item .testi-block:hover .testi-block-images img {
+/* .testimonial-slider-main-block.owl-carousel .owl-item .testi-block:hover .testi-block-images img {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-}
+} */
 
 .services-main-block {
   padding: 50px 0;
