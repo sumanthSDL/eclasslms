@@ -13,8 +13,8 @@
                             <a class="topbar-toggle-hamburger" href="javascript:void();">
                                 <img src="{{ url('admin_assets/assets/images/svg-icon/horizontal.svg') }}" class="img-fluid menu-hamburger-horizontal" alt="horizontal">
                                 <img src="{{ url('admin_assets/assets/images/svg-icon/verticle.svg') }}" class="img-fluid menu-hamburger-vertical" alt="verticle">
-                             </a>
-                         </div>
+                            </a>
+                        </div>
                     </li>
                     <li class="list-inline-item">
                         <div class="menubar">

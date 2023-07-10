@@ -400,9 +400,11 @@ ul {
 }
 .btm-20 {
   margin-bottom: 20px;
+  color:#344264;
 }
 .btm-10 {
   margin-bottom: 10px;
+  color:#344264;
 }
 .btm-5 {
   margin-bottom: 5px;
@@ -755,6 +757,7 @@ sup.redstar {
 }
 .home-heading {
   font-size: 50px;
+  color:#16274B;
 }
 .home-dtl p {
   font-size: 20px;

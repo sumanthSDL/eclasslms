@@ -32,17 +32,15 @@ class RegisterController extends Controller
     		'email' => 'required|email|unique:users,email',
     		'password' => 'required|min:6'
     	]);
-    	
     	$config = Setting::first();
 
-    	if($config->mobile_enable == 1){
-    	    
-    	    $request->validate([
-    	           'mobile' => 'required|numeric'
-    	    ]);
-    	    
-    	}
-    	
+    if($config->mobile_enable == 1){
+        
+        $request->validate([
+                'mobile' => 'required|numeric'
+        ]);
+        
+    }
         if($config->verify_enable == 0)
         {
             $verified = \Carbon\Carbon::now()->toDateTimeString();
@@ -61,7 +59,9 @@ class RegisterController extends Controller
     		'password' => bcrypt(request('password')),
 
     	]);
+       
         $user->assignRole('User');
+
         if($config->verify_enable == 0)
         {
             return $this->issueToken($request, 'password');  
