@@ -57,7 +57,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-6">
-                                        <div class="forgot-password text-right btm-20"><a href="{{ 'password/reset' }}" title="sign-up">{{ __('ForgotPassword') }}</a>
+                                        <div class="forgot-password text-right btm-20"><a href="{{ 'password/reset' }}" title="sign-up">{{ __('Forgot Password') }}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -124,7 +124,7 @@
                             </div>
                             <hr>
                             <div class="signin-link text-center">
-                               {{ __('Bysigningup') }} <a href="{{url('terms_condition')}}" title="Policy">{{ __('Terms&Condition') }} </a>, <a href="{{url('privacy_policy')}}" title="Policy">{{ __('PrivacyPolicy') }}.</a>
+                               {{ __('By signing up') }} <a href="{{url('terms_condition')}}" title="Policy">{{ __('Terms & Condition') }} </a>, <a href="{{url('privacy_policy')}}" title="Policy">{{ __('Privacy Policy') }}.</a>
                             </div>
                           </div>
                     </div>

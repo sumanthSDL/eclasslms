@@ -73,7 +73,7 @@
                             @endif
                             <li><a href="{{ route('front.service') }}" title="{{ __('Our Services') }}">{{ __('Our Services') }}</a></li>
                             <li><a href="{{ route('front.feature') }}" title="{{ __('Our Feature') }}">{{ __('Our Feature') }}</a></li>
-                            <li><a href="{{ route('footer.alumini') }}" title="{{ __('Our Alumini') }}">{{ __('Aluminis') }}</a></li>
+                            <li><a href="{{ route('footer.alumini') }}" title="{{ __('Our Alumini') }}">{{ __('Alumni') }}</a></li>
                             @php
                             $menus = App\Menu::get();
                             $pages = App\Page::get();
@@ -108,7 +108,7 @@
                             @endif
 
                             @if(isset($widgets) && $widgets->help_enable == 1)
-                            <li><a href="{{ route('help.show') }}" title="{{ __('Help&Support') }}">{{ __('Help&Support') }}</a></li>
+                            <li><a href="{{ route('help.show') }}" title="{{ __('Help&Support') }}">{{ __('Help & Support') }}</a></li>
                             @endif
                             @php
                             $menus = App\Menu::get();

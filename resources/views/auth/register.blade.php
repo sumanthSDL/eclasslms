@@ -111,7 +111,7 @@
 
                                         <label class="form-check-label" for="term">
                                             <div class="signin-link text-center btm-20">
-                                                <b>{{ __('I agree to ') }}<a href="{{url('terms_condition')}}" title="Policy">{{ __('Terms&Condition') }} </a>, <a href="{{url('privacy_policy')}}" title="Policy">{{ __('PrivacyPolicy') }}.</a></b>
+                                                <b>{{ __('I agree to ') }}<a href="{{url('terms_condition')}}" title="Policy">{{ __('Terms & Condition') }} </a>, <a href="{{url('privacy_policy')}}" title="Policy">{{ __('PrivacyPolicy') }}.</a></b>
                                             </div>
                                         </label>
                                     </div>
@@ -167,7 +167,7 @@
                                     @endif
                                 </div>  
                             </div>
-                            <div class="sign-up text-center">{{ __('Alreadyhaveanaccount') }}?<a href="{{ route('login') }}" title="sign-up"> {{ __('Login') }}</a>
+                            <div class="sign-up text-center">{{ __('Already have an account') }}?<a href="{{ route('login') }}" title="sign-up"> {{ __('Login') }}</a>
                             </div>
                         </div>
                     </div>
