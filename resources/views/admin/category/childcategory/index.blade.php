@@ -40,7 +40,7 @@ $data['title1'] = 'Child Categories';
                     <label for="checkboxAll" class="material-checkbox"></label> #</th>
                   <th>{{ __('Icon') }}</th>
                   <th>{{ __('SubCategory') }}</th>
-                  <th>{{ __('ChildCategory') }}</th>
+                  <th>{{ __('Child Category') }}</th>
                   <th>{{ __('Status') }}</th>
                   <th>{{ __('Action') }}</th>
 
