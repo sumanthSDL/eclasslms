@@ -53,7 +53,7 @@ $gets = App\Breadcum::first();
 <?php if(isset($subcat)): ?>
 <section id="categories" class="categories-main-block categories-main-block-one">
     <div class="container-xl">
-        <h4 class="categories-heading"><?php echo e(__('SubCategories')); ?></h4>
+        <h4 class="categories-heading"><?php echo e(__('Sub Categories')); ?></h4>
         <div class="row">
             <?php $__currentLoopData = $subcat; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $cat): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <?php if($cat->status == 1): ?>
@@ -76,7 +76,7 @@ $gets = App\Breadcum::first();
 <?php elseif(isset($childcat)): ?>
 <section id="categories" class="categories-main-block categories-main-block-one">
     <div class="container-xl">
-        <h4 class="categories-heading"><?php echo e(__('SubCategories')); ?></h4>
+        <h4 class="categories-heading"><?php echo e(__('Sub Categories')); ?></h4>
         <div class="row">
 
             <?php $__currentLoopData = $childcat; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $cat): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>

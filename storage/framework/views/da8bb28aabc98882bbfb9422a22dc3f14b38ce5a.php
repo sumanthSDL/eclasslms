@@ -112,7 +112,7 @@
 
                                         <label class="form-check-label" for="term">
                                             <div class="signin-link text-center btm-20">
-                                                <b><?php echo e(__('I agree to ')); ?><a href="<?php echo e(url('terms_condition')); ?>" title="Policy"><?php echo e(__('Terms&Condition')); ?> </a>, <a href="<?php echo e(url('privacy_policy')); ?>" title="Policy"><?php echo e(__('PrivacyPolicy')); ?>.</a></b>
+                                                <b><?php echo e(__('I agree to ')); ?><a href="<?php echo e(url('terms_condition')); ?>" title="Policy"><?php echo e(__('Terms & Condition')); ?> </a>, <a href="<?php echo e(url('privacy_policy')); ?>" title="Policy"><?php echo e(__('PrivacyPolicy')); ?>.</a></b>
                                             </div>
                                         </label>
                                     </div>
@@ -168,7 +168,7 @@
                                     <?php endif; ?>
                                 </div>  
                             </div>
-                            <div class="sign-up text-center"><?php echo e(__('Alreadyhaveanaccount')); ?>?<a href="<?php echo e(route('login')); ?>" title="sign-up"> <?php echo e(__('Login')); ?></a>
+                            <div class="sign-up text-center"><?php echo e(__('Already have an account')); ?>?<a href="<?php echo e(route('login')); ?>" title="sign-up"> <?php echo e(__('Login')); ?></a>
                             </div>
                         </div>
                     </div>

@@ -53,12 +53,12 @@
 
                                             <li class="<?php echo e(Nav::isResource('subcategory')); ?>">
                                                 <a
-                                                    href="<?php echo e(url('subcategory')); ?>"><?php echo e(__('SubCategory')); ?></a>
+                                                    href="<?php echo e(url('subcategory')); ?>"><?php echo e(__('Sub Category')); ?></a>
                                             </li>
 
                                             <li class="<?php echo e(Nav::isResource('childcategory')); ?>">
                                                 <a
-                                                    href="<?php echo e(url('childcategory')); ?>"><?php echo e(__('ChildCategory')); ?></a>
+                                                    href="<?php echo e(url('childcategory')); ?>"><?php echo e(__('Child Category')); ?></a>
                                             </li>
 
                                         </ul>
@@ -69,11 +69,11 @@
                                     </li>
                                     <li class="<?php echo e(Nav::isRoute('courses.reject')); ?>">
                                         <a
-                                            href="<?php echo e(route('courses.reject')); ?>"><?php echo e(__('RejectedCourses')); ?></a>
+                                            href="<?php echo e(route('courses.reject')); ?>"><?php echo e(__('Rejected Courses')); ?></a>
                                     </li>
                                     <li class="<?php echo e(Nav::isRoute('courses.reject')); ?>">
                                         <a
-                                            href="<?php echo e(route('courses.reject')); ?>"><?php echo e(__('Modified RejectedCourses')); ?></a>
+                                            href="<?php echo e(route('courses.reject')); ?>"><?php echo e(__('Modified Rejected Courses')); ?></a>
                                     </li>
                                     <li class="<?php echo e(Nav::isResource('courselang')); ?>">
                                         <a href="<?php echo e(url('courselang')); ?>"><?php echo e(__('Course')); ?>
@@ -88,7 +88,7 @@
                                     <?php endif; ?>
 
                                     <li class="<?php echo e(Nav::isRoute('quiz.review')); ?>"><a
-                                            href="<?php echo e(route('quiz.review')); ?>"><span><?php echo e(__('QuizReview')); ?></span></a>
+                                            href="<?php echo e(route('quiz.review')); ?>"><span><?php echo e(__('Quiz Review')); ?></span></a>
                                     </li>
                                 </ul>
                             </li>
@@ -105,20 +105,20 @@
                                     <li
                                         class="<?php echo e(Nav::isRoute('meeting.create')); ?> <?php echo e(Nav::isRoute('zoom.show')); ?> <?php echo e(Nav::isRoute('zoom.edit')); ?> <?php echo e(Nav::isRoute('zoom.setting')); ?> <?php echo e(Nav::isRoute('zoom.index')); ?>">
                                         <a href="javaScript:void();">
-                                            <i class=""></i> <span><?php echo e(__('ZoomLiveMeetings')); ?></span><i
+                                            <i class=""></i> <span><?php echo e(__('Zoom Live Meetings')); ?></span><i
                                                 class="feather icon-chevron-right"></i>
                                         </a>
                                         <ul class="vertical-submenu">
 
                                             <li class="<?php echo e(Nav::isRoute('zoom.setting')); ?>">
                                                 <a
-                                                    href="<?php echo e(route('zoom.setting')); ?>"><?php echo e(__('ZoomSettings')); ?></a>
+                                                    href="<?php echo e(route('zoom.setting')); ?>"><?php echo e(__('Zoom Settings')); ?></a>
                                             </li>
 
                                             <li
                                                 class="<?php echo e(Nav::isRoute('zoom.index')); ?> <?php echo e(Nav::isRoute('zoom.show')); ?> <?php echo e(Nav::isRoute('zoom.edit')); ?> <?php echo e(Nav::isRoute('meeting.create')); ?>">
                                                 <a
-                                                    href="<?php echo e(route('zoom.index')); ?>"><?php echo e(__('ZoomDashboard')); ?></a>
+                                                    href="<?php echo e(route('zoom.index')); ?>"><?php echo e(__('Zoom Dashboard')); ?></a>
                                             </li>
 
                                         </ul>
@@ -133,17 +133,17 @@
                                     <li
                                         class="<?php echo e(Nav::isRoute('bbl.setting')); ?> <?php echo e(Nav::isRoute('bbl.all.meeting')); ?> <?php echo e(Nav::isRoute('download.meeting')); ?>">
                                         <a href="javaScript:void();">
-                                            <i class=""></i> <span><?php echo e(__('BigBlueMeetings')); ?></span><i
+                                            <i class=""></i> <span><?php echo e(__('Big Blue Meetings')); ?></span><i
                                                 class="feather icon-chevron-right"></i>
                                         </a>
                                         <ul class="vertical-submenu">
                                             <li class="<?php echo e(Nav::isRoute('bbl.all.meeting')); ?>">
                                                 <a
-                                                    href="<?php echo e(route('bbl.all.meeting')); ?>"><?php echo e(__('ListMeetings')); ?></a>
+                                                    href="<?php echo e(route('bbl.all.meeting')); ?>"><?php echo e(__('List Meetings')); ?></a>
                                             </li>
                                             <li class="<?php echo e(Nav::isRoute('download.meeting')); ?>">
                                                 <a
-                                                    href="<?php echo e(route('download.meeting')); ?>"><?php echo e(__('MeetingRecordings')); ?></a>
+                                                    href="<?php echo e(route('download.meeting')); ?>"><?php echo e(__('Meeting Recordings')); ?></a>
                                             </li>
                                         </ul>
                                     </li>
@@ -173,7 +173,7 @@
                                             </li>
                                             <li class="<?php echo e(Nav::isRoute('googlemeet.allgooglemeeting')); ?>">
                                                 <a
-                                                    href="<?php echo e(route('googlemeet.allgooglemeeting')); ?>"><?php echo e(__('AllMeetings')); ?></a>
+                                                    href="<?php echo e(route('googlemeet.allgooglemeeting')); ?>"><?php echo e(__('All Meetings')); ?></a>
                                             </li>
 
                                         </ul>
@@ -233,15 +233,15 @@
 
                                     <li>
                                         <a class="<?php echo e(Nav::isRoute('allrequestinvolve')); ?>"
-                                            href="<?php echo e(route('allrequestinvolve')); ?>"><?php echo e(__('RequestToInvolve')); ?></a>
+                                            href="<?php echo e(route('allrequestinvolve')); ?>"><?php echo e(__('Request To Involve')); ?></a>
                                     </li>
                                     <li>
                                         <a class="<?php echo e(Nav::isRoute('involve.request.index')); ?>"
-                                            href="<?php echo e(route('involve.request.index')); ?>"><?php echo e(__('InvolvementRequests')); ?></a>
+                                            href="<?php echo e(route('involve.request.index')); ?>"><?php echo e(__('Involvement Requests')); ?></a>
                                     </li>
                                     <li>
                                         <a class="<?php echo e(Nav::isRoute('involve.request')); ?>"
-                                            href="<?php echo e(route('involve.request')); ?>"><?php echo e(__('InvolvedInCourse')); ?></a>
+                                            href="<?php echo e(route('involve.request')); ?>"><?php echo e(__('Involved In Course')); ?></a>
                                     </li>
 
                                 </ul>
@@ -314,18 +314,18 @@
                             <!-- revenue start  -->
                             <li class="<?php echo e(Nav::isResource('pending.payout')); ?> <?php echo e(Nav::isRoute('admin.completed')); ?>">
                                 <a href="javaScript:void();" class="menu"><i class="feather icon-dollar-sign text-secondary"></i>
-                                    <span><?php echo e(__('MyRevenue')); ?><div class="sub-menu truncate">Pending Payout, Completed Payout</div></span>
+                                    <span><?php echo e(__('My Revenue')); ?><div class="sub-menu truncate">Pending Payout, Completed Payout</div></span>
                                     <i class="feather icon-chevron-right"></i>
                                 </a>
                                 <ul class="vertical-submenu">
 
                                     <li class="<?php echo e(Nav::isResource('pending.payout')); ?>">
-                                        <a href="<?php echo e(route('pending.payout')); ?>"><?php echo e(__('PendingPayout')); ?></a>
+                                        <a href="<?php echo e(route('pending.payout')); ?>"><?php echo e(__('Pending Payout')); ?></a>
                                     </li>
 
                                     <li class="<?php echo e(Nav::isRoute('admin.completed')); ?>">
                                         <a
-                                            href="<?php echo e(route('admin.completed')); ?>"><?php echo e(__('CompletedPayout')); ?></a>
+                                            href="<?php echo e(route('admin.completed')); ?>"><?php echo e(__('Completed Payout')); ?></a>
                                     </li>
 
                                 </ul>
@@ -344,7 +344,7 @@
                                     </li>
                                     <li class="<?php echo e(Nav::isResource('show/progress/report')); ?>">
                                         <a href="<?php echo e(url('show/progress/report')); ?>">
-                                            Progress<?php echo e(__('Report')); ?></a>
+                                            Progress <?php echo e(__('Report')); ?></a>
                                     </li>
 
 
@@ -358,7 +358,7 @@
                             <li class="<?php echo e(Nav::isResource('instructor.pay')); ?>">
                                 <a href="<?php echo e(route('instructor.pay')); ?>" class="menu">
                                     <i
-                                        class="feather icon-settings text-secondary"></i><span><?php echo e(__('PayoutSettings')); ?></span>
+                                        class="feather icon-settings text-secondary"></i><span><?php echo e(__('Payout Settings')); ?></span>
                                 </a>
                             </li>
                             <?php endif; ?>

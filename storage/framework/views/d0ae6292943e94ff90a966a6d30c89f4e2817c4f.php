@@ -258,34 +258,34 @@
                         <ul>
                             <?php if(Auth::User()->role == 'admin'): ?>
                                 <a target="_blank" href="<?php echo e(url('/admins')); ?>">
-                                    <li><i data-feather="pie-chart"></i><?php echo e(__('AdminDashboard')); ?></li>
+                                    <li><i data-feather="pie-chart"></i><?php echo e(__('Admin Dashboard')); ?></li>
                                 </a>
                             <?php endif; ?>
                             <?php if(Auth::User()->role == 'instructor'): ?>
                                 <a target="_blank" href="<?php echo e(url('/instructor')); ?>">
-                                    <li><i data-feather="pie-chart"></i><?php echo e(__('InstructorDashboard')); ?></li>
+                                    <li><i data-feather="pie-chart"></i><?php echo e(__('Instructor Dashboard')); ?></li>
                                 </a>
                             <?php endif; ?>
 
                             <a href="<?php echo e(route('mycourse.show')); ?>">
-                                <li><i data-feather="book-open"></i><?php echo e(__('MyCourses')); ?></li>
+                                <li><i data-feather="book-open"></i><?php echo e(__('My Courses')); ?></li>
                             </a>
 
                             <a href="<?php echo e(route('wishlist.show')); ?>">
-                                <li><i data-feather="heart"></i><?php echo e(__('MyWishlist')); ?></li>
+                                <li><i data-feather="heart"></i><?php echo e(__('My Wishlist')); ?></li>
                             </a>
 
                             <a href="<?php echo e(route('purchase.show')); ?>">
-                                <li><i data-feather="shopping-cart"></i><?php echo e(__('PurchaseHistory')); ?></li>
+                                <li><i data-feather="shopping-cart"></i><?php echo e(__('Purchase History')); ?></li>
                             </a>
                             <a href="<?php echo e(route('profile.show', Auth::User()->id)); ?>">
-                                <li><i data-feather="user"></i><?php echo e(__('UserProfile')); ?></li>
+                                <li><i data-feather="user"></i><?php echo e(__('User Profile')); ?></li>
                             </a>
                             <?php if(Auth::User()->role == 'user'): ?>
                                 <?php if($gsetting->instructor_enable == 1): ?>
                                     <a href="#" data-toggle="modal" data-target="#myModalinstructor"
                                         title="Become An Instructor">
-                                        <li><i data-feather="shield"></i><?php echo e(__('BecomeAnInstructor')); ?></li>
+                                        <li><i data-feather="shield"></i><?php echo e(__('Become An Instructor')); ?></li>
                                     </a>
                                 <?php endif; ?>
                             <?php endif; ?>
@@ -298,7 +298,7 @@
                             <?php if(env('ENABLE_INSTRUCTOR_SUBS_SYSTEM') == 1): ?>
                                 <?php if(Auth::User()->role == 'instructor'): ?>
                                     <a href="<?php echo e(route('plan.page')); ?>">
-                                        <li><i data-feather="tag"></i><?php echo e(__('InstructorPlan')); ?></li>
+                                        <li><i data-feather="tag"></i><?php echo e(__('Instructor Plan')); ?></li>
                                     </a>
                                 <?php endif; ?>
                             <?php endif; ?>
@@ -330,7 +330,7 @@
 
                                 <?php if(isset($wallet_settings) && $wallet_settings->status == 1): ?>
                                     <a href="<?php echo e(url('/wallet')); ?>">
-                                        <li><i class="icon-wallet icons"></i><?php echo e(__('MyWallet')); ?></li>
+                                        <li><i class="icon-wallet icons"></i><?php echo e(__('My Wallet')); ?></li>
                                     </a>
                                 <?php endif; ?>
 
@@ -359,7 +359,7 @@
                                 <?php endif; ?>
                             <?php endif; ?>
                             <a href="<?php echo e(route('my.leaderboard')); ?>">
-                                <li><i class="icon-chart icons"></i><?php echo e(__('MyLeaderboard')); ?></li>
+                                <li><i class="icon-chart icons"></i><?php echo e(__('My Leaderboard')); ?></li>
                             </a>
                             <?php if(Auth::User()->role == 'user'): ?>
                                 <a href="<?php echo e(route('studentprofile')); ?>">
@@ -578,7 +578,7 @@
                                                     </ul>
                                                 </div>
                                                 <div id="notificationFooter"><a
-                                                        href="<?php echo e(route('deleteNotification')); ?>"><?php echo e(__('ClearAll')); ?></a>
+                                                        href="<?php echo e(route('deleteNotification')); ?>"><?php echo e(__('Clear All')); ?></a>
                                                 </div>
                                             </div>
                                         </li>
@@ -668,7 +668,7 @@
                                                         <?php if(Auth::User()->role == 'admin'): ?>
                                                             <a target="_blank" href="<?php echo e(url('/admins')); ?>">
                                                                 <li><i
-                                                                        data-feather="pie-chart"></i><?php echo e(__('AdminDashboard')); ?>
+                                                                        data-feather="pie-chart"></i><?php echo e(__('Admin Dashboard')); ?>
 
                                                                 </li>
                                                             </a>
@@ -676,7 +676,7 @@
                                                         <?php if(Auth::User()->role == 'instructor'): ?>
                                                             <a target="_blank" href="<?php echo e(url('/instructor')); ?>">
                                                                 <li><i
-                                                                        data-feather="pie-chart"></i><?php echo e(__('InstructorDashboard')); ?>
+                                                                        data-feather="pie-chart"></i><?php echo e(__('Instructor Dashboard')); ?>
 
                                                                 </li>
                                                             </a>
@@ -685,14 +685,14 @@
 
                                                         <?php if($drop->my_courses == '1'): ?>
                                                             <a href="<?php echo e(route('mycourse.show')); ?>">
-                                                                <li><i data-feather="book-open"></i><?php echo e(__('MyCourses')); ?>
+                                                                <li><i data-feather="book-open"></i><?php echo e(__('My Courses')); ?>
 
                                                                 </li>
                                                             </a>
                                                         <?php endif; ?>
                                                         <?php if($drop->my_wishlist == '1'): ?>
                                                             <a href="<?php echo e(route('wishlist.show')); ?>">
-                                                                <li><i data-feather="heart"></i><?php echo e(__('MyWishlist')); ?>
+                                                                <li><i data-feather="heart"></i><?php echo e(__('My Wishlist')); ?>
 
                                                                 </li>
                                                             </a>
@@ -700,14 +700,14 @@
                                                         <?php if($drop->purchased_history == '1'): ?>
                                                             <a href="<?php echo e(route('purchase.show')); ?>">
                                                                 <li><i
-                                                                        data-feather="shopping-cart"></i><?php echo e(__('PurchaseHistory')); ?>
+                                                                        data-feather="shopping-cart"></i><?php echo e(__('Purchase History')); ?>
 
                                                                 </li>
                                                             </a>
                                                         <?php endif; ?>
                                                         <?php if($drop->my_profile == '1'): ?>
                                                             <a href="<?php echo e(route('profile.show', Auth::User()->id)); ?>">
-                                                                <li><i data-feather="user"></i><?php echo e(__('UserProfile')); ?>
+                                                                <li><i data-feather="user"></i><?php echo e(__('User Profile')); ?>
 
                                                                 </li>
                                                             </a>
@@ -718,7 +718,7 @@
                                                                     data-target="#myModalinstructor"
                                                                     title="Become An Instructor">
                                                                     <li><i
-                                                                            data-feather="shield"></i><?php echo e(__('BecomeAnInstructor')); ?>
+                                                                            data-feather="shield"></i><?php echo e(__('Become An Instructor')); ?>
 
                                                                     </li>
                                                                 </a>
@@ -737,7 +737,7 @@
                                                             <?php if(Auth::User()->role == 'instructor'): ?>
                                                                 <a href="<?php echo e(route('plan.page')); ?>">
                                                                     <li><i
-                                                                            data-feather="tag"></i><?php echo e(__('InstructorPlan')); ?>
+                                                                            data-feather="tag"></i><?php echo e(__('Instructor Plan')); ?>
 
                                                                     </li>
                                                                 </a>
@@ -774,7 +774,7 @@
                                                             <?php if(isset($wallet_settings) && $wallet_settings->status == 1): ?>
                                                                 <a href="<?php echo e(url('/wallet')); ?>">
                                                                     <li><i
-                                                                            class="icon-wallet icons"></i><?php echo e(__('MyWallet')); ?>
+                                                                            class="icon-wallet icons"></i><?php echo e(__('My Wallet')); ?>
 
                                                                     </li>
                                                                 </a>
@@ -815,7 +815,7 @@
                                                         <?php if($drop->my_leadership == '1'): ?>
                                                             <a href="<?php echo e(route('my.leaderboard')); ?>">
                                                                 <li><i
-                                                                        class="icon-chart icons"></i><?php echo e(__('MyLeaderboard')); ?>
+                                                                        class="icon-chart icons"></i><?php echo e(__('My Leaderboard')); ?>
 
                                                                 </li>
                                                             </a>
@@ -910,7 +910,7 @@
                                                     <?php if(Auth::User()->role == 'admin'): ?>
                                                         <a target="_blank" href="<?php echo e(url('/admins')); ?>">
                                                             <li><i
-                                                                    data-feather="pie-chart"></i><?php echo e(__('AdminDashboard')); ?>
+                                                                    data-feather="pie-chart"></i><?php echo e(__('Admin Dashboard')); ?>
 
                                                             </li>
                                                         </a>
@@ -918,7 +918,7 @@
                                                     <?php if(Auth::User()->role == 'instructor'): ?>
                                                         <a target="_blank" href="<?php echo e(url('/instructor')); ?>">
                                                             <li><i
-                                                                    data-feather="pie-chart"></i><?php echo e(__('InstructorDashboard')); ?>
+                                                                    data-feather="pie-chart"></i><?php echo e(__('Instructor Dashboard')); ?>
 
                                                             </li>
                                                         </a>
@@ -927,20 +927,20 @@
 
 
                                                     <a href="<?php echo e(route('mycourse.show')); ?>">
-                                                        <li><i data-feather="book-open"></i><?php echo e(__('MyCourses')); ?></li>
+                                                        <li><i data-feather="book-open"></i><?php echo e(__('My Courses')); ?></li>
                                                     </a>
 
                                                     <a href="<?php echo e(route('wishlist.show')); ?>">
-                                                        <li><i data-feather="heart"></i><?php echo e(__('MyWishlist')); ?></li>
+                                                        <li><i data-feather="heart"></i><?php echo e(__('My Wishlist')); ?></li>
                                                     </a>
                                                     <a href="<?php echo e(route('purchase.show')); ?>">
                                                         <li><i
-                                                                data-feather="shopping-cart"></i><?php echo e(__('PurchaseHistory')); ?>
+                                                                data-feather="shopping-cart"></i><?php echo e(__('Purchase History')); ?>
 
                                                         </li>
                                                     </a>
                                                     <a href="<?php echo e(route('profile.show', Auth::User()->id)); ?>">
-                                                        <li><i data-feather="user"></i><?php echo e(__('UserProfile')); ?></li>
+                                                        <li><i data-feather="user"></i><?php echo e(__('User Profile')); ?></li>
                                                     </a>
                                                     <?php if(Auth::User()->role == 'user'): ?>
                                                         <?php if($gsetting->instructor_enable == 1): ?>
@@ -948,7 +948,7 @@
                                                                 data-target="#myModalinstructor"
                                                                 title="Become An Instructor">
                                                                 <li><i
-                                                                        data-feather="shield"></i><?php echo e(__('BecomeAnInstructor')); ?>
+                                                                        data-feather="shield"></i><?php echo e(__('Become An Instructor')); ?>
 
                                                                 </li>
                                                             </a>
@@ -966,7 +966,7 @@
                                                     <?php if(env('ENABLE_INSTRUCTOR_SUBS_SYSTEM') == 1): ?>
                                                         <?php if(Auth::User()->role == 'instructor'): ?>
                                                             <a href="<?php echo e(route('plan.page')); ?>">
-                                                                <li><i data-feather="tag"></i><?php echo e(__('InstructorPlan')); ?>
+                                                                <li><i data-feather="tag"></i><?php echo e(__('Instructor Plan')); ?>
 
                                                                 </li>
                                                             </a>
@@ -995,7 +995,7 @@
                                                     <?php if(Schema::hasTable('affiliate') && Schema::hasTable('wallet_settings')): ?>
                                                         <?php if(isset($wallet_settings) && $wallet_settings->status == 1): ?>
                                                             <a href="<?php echo e(url('/wallet')); ?>">
-                                                                <li><i class="icon-wallet icons"></i><?php echo e(__('MyWallet')); ?>
+                                                                <li><i class="icon-wallet icons"></i><?php echo e(__('My Wallet')); ?>
 
                                                                 </li>
                                                             </a>
@@ -1028,7 +1028,7 @@
                                                         <?php endif; ?>
                                                     <?php endif; ?>
                                                     <a href="<?php echo e(route('my.leaderboard')); ?>">
-                                                        <li><i class="icon-chart icons"></i><?php echo e(__('MyLeaderboard')); ?>
+                                                        <li><i class="icon-chart icons"></i><?php echo e(__('My Leaderboard')); ?>
 
                                                         </li>
                                                     </a>

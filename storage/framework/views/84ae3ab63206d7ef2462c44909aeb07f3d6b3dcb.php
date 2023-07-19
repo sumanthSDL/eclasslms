@@ -39,8 +39,8 @@ $data['title1'] = 'Child Categories';
                     <input id="checkboxAll" type="checkbox" class="filled-in" name="checked[]" value="all" />
                     <label for="checkboxAll" class="material-checkbox"></label> #</th>
                   <th><?php echo e(__('Icon')); ?></th>
-                  <th><?php echo e(__('SubCategory')); ?></th>
-                  <th><?php echo e(__('ChildCategory')); ?></th>
+                  <th><?php echo e(__('Sub Category')); ?></th>
+                  <th><?php echo e(__('Child Category')); ?></th>
                   <th><?php echo e(__('Status')); ?></th>
                   <th><?php echo e(__('Action')); ?></th>
 
@@ -163,7 +163,7 @@ $data['title1'] = 'Child Categories';
 
                               <div class="row">
                                 <div class="col-md-12">
-                                  <label for="exampleInputSlug"><?php echo e(__('Select SubCategory')); ?></label>
+                                  <label for="exampleInputSlug"><?php echo e(__('Select Sub Category')); ?></label>
                                   <select name="subcategories" id="upload_id" class="form-control select2">
                                     <?php
                                     $subcategory = App\SubCategory::all();
@@ -314,12 +314,12 @@ $data['title1'] = 'Child Categories';
                     </div>
                     <div class="row">
                       <div class="col-md-10">
-                        <label for="subcategory"><?php echo e(__('SubCategory')); ?></label>
+                        <label for="sub category"><?php echo e(__('Sub Category')); ?></label>
                         <select name="subcategories" mt-6name="subcategories" id="upload_id"
                           class="form-control select2">
                           <option value="0"><?php echo e(__('Please Select')); ?>
 
-                            <?php echo e(__('SubCategory')); ?></option>
+                            <?php echo e(__('Sub Category')); ?></option>
                           <?php $__currentLoopData = $subcategory; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $cat): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                           <option value="<?php echo e($cat->id); ?>"><?php echo e($cat->title); ?></option>
                           <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

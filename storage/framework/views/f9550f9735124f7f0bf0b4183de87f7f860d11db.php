@@ -1,3 +1,4 @@
+
 <?php $__env->startSection('title', 'Login'); ?>
 <?php $__env->startSection('content'); ?>
 <?php echo $__env->make('admin.message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
@@ -58,7 +59,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-6">
-                                        <div class="forgot-password text-right btm-20"><a href="<?php echo e('password/reset'); ?>" title="sign-up"><?php echo e(__('ForgotPassword')); ?></a>
+                                        <div class="forgot-password text-right btm-20"><a href="<?php echo e('password/reset'); ?>" title="sign-up"><?php echo e(__('Forgot Password')); ?></a>
                                         </div>
                                     </div>
                                 </div>
@@ -126,7 +127,7 @@
                             </div>
                             <hr>
                             <div class="signin-link text-center">
-                               <?php echo e(__('Bysigningup')); ?> <a href="<?php echo e(url('terms_condition')); ?>" title="Policy"><?php echo e(__('Terms&Condition')); ?> </a>, <a href="<?php echo e(url('privacy_policy')); ?>" title="Policy"><?php echo e(__('PrivacyPolicy')); ?>.</a>
+                               <?php echo e(__('By signing up')); ?> <a href="<?php echo e(url('terms_condition')); ?>" title="Policy"><?php echo e(__('Terms & Condition')); ?> </a>, <a href="<?php echo e(url('privacy_policy')); ?>" title="Policy"><?php echo e(__('Privacy Policy')); ?>.</a>
                             </div>
                           </div>
                     </div>

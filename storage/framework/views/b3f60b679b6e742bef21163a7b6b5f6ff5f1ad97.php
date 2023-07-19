@@ -3864,7 +3864,7 @@ Module::find('Googleclassroom')->isEnabled()): ?>
             <?php $__currentLoopData = $testi; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $tes): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <div class="item testi-block text-center">
                 <div class="testi-block-images">
-                    <img src="<?php echo e(url('images/testimonial/testimonial.png')); ?>" class="img-fluid" alt=""> 
+                    <img src="<?php echo e(url('images/testimonial/color.jpg')); ?>" class="img-fluid" alt="">    
                 </div>
                 <div class="testi-block-one">
                     <div class="testi-img text-center">

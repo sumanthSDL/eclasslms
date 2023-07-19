@@ -617,7 +617,7 @@
                                     </li>
                                     <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['adsense-setting.manage'])): ?>
                                     <li class="<?php echo e(Nav::isRoute('adsense')); ?>">
-                                        <a href="<?php echo e(url('/admin/adsensesetting')); ?>"><?php echo e(__('Adsense')); ?></a>
+                                        <a href="<?php echo e(url('/admin/adsensesetting')); ?>"><?php echo e(__('Ad sense')); ?></a>
                                     </li>
                                     <?php endif; ?>
 
