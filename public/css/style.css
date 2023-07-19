@@ -400,9 +400,11 @@ ul {
 }
 .btm-20 {
   margin-bottom: 20px;
+  color:#344264;
 }
 .btm-10 {
   margin-bottom: 10px;
+  color:#344264;
 }
 .btm-5 {
   margin-bottom: 5px;
@@ -755,6 +757,7 @@ sup.redstar {
 }
 .home-heading {
   font-size: 50px;
+  color:#16274B;
 }
 .home-dtl p {
   font-size: 20px;
@@ -1196,9 +1199,9 @@ sup.redstar {
   background-color: var(--background-white-bg-color);
   box-shadow: 0 0 1px 1px rgba(20,23,28,.1),
 }
-/*.testimonial-block:hover {
+.testimonial-block:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
-}*/
+}
 .testimonial-block ul li {
   display: inline-block;
 }
@@ -1217,7 +1220,7 @@ sup.redstar {
 }
 
 .trusted-main-block {
-  /* background-color: var(--background-grey-bg-color); */
+  background-color: var(--background-grey-bg-color);
   padding: 50px 0 40px;
 }
 /* .patners-block {

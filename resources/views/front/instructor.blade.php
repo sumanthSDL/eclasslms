@@ -79,7 +79,7 @@
 					                            <img src="{{url('images/badges/2.png')}}" class="img-fluid" alt="" data-toggle="tooltip" data-placement="bottom" title="Has {{ $course_count }} courses">
 					                            @endif
 					                            <img src="{{url('images/badges/3.png')}}" class="img-fluid" alt="" data-toggle="tooltip" data-placement="bottom" title="rating from 4 to 5">
-					                            <img src="{{url('images/badges/4.png')}}" class="img-fluid" alt="" data-toggle="tooltip" data-placement="bottom" title=" {{ $data }} users has enrolled">
+					                            <img src="{{url('images/badges/4.png')}}" class="img-fluid" alt="" data-toggle="tooltip" data-placement="bottom" title=" {{ $data }} users have enrolled">
 					                        </div>
 					                    </div>
 					                </div>
@@ -139,7 +139,7 @@
 			                    <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">{{ __('About me') }}</a>
 			                </li>
 			                <li class="nav-item">
-			                    <a class="nav-link" id="classes-tab" data-toggle="tab" href="#classes" role="tab" aria-controls="classes" aria-selected="false">{{ __('MyCourses') }}</a>
+			                    <a class="nav-link" id="classes-tab" data-toggle="tab" href="#classes" role="tab" aria-controls="classes" aria-selected="false">{{ __('My Courses') }}</a>
 			                </li>
 			                <li class="nav-item">
 			                    <a class="nav-link" id="badges-tab" data-toggle="tab" href="#badges" role="tab" aria-controls="badges" aria-selected="false">{{__('Badges')}}</a>
@@ -217,7 +217,7 @@
 					                                       
 					                                             
 					                                            @else
-					                                                <div class="pull-left">{{ __('NoRating') }}</div>
+					                                                <div class="pull-left">{{ __('No Rating') }}</div>
 					                                            @endif
 					                                        </li>
 					                                        <!-- overall rating-->

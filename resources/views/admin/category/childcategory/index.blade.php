@@ -39,7 +39,7 @@ $data['title1'] = 'Child Categories';
                     <input id="checkboxAll" type="checkbox" class="filled-in" name="checked[]" value="all" />
                     <label for="checkboxAll" class="material-checkbox"></label> #</th>
                   <th>{{ __('Icon') }}</th>
-                  <th>{{ __('SubCategory') }}</th>
+                  <th>{{ __('Sub Category') }}</th>
                   <th>{{ __('Child Category') }}</th>
                   <th>{{ __('Status') }}</th>
                   <th>{{ __('Action') }}</th>
@@ -158,7 +158,7 @@ $data['title1'] = 'Child Categories';
 
                               <div class="row">
                                 <div class="col-md-12">
-                                  <label for="exampleInputSlug">{{ __('Select SubCategory') }}</label>
+                                  <label for="exampleInputSlug">{{ __('Select Sub Category') }}</label>
                                   <select name="subcategories" id="upload_id" class="form-control select2">
                                     @php
                                     $subcategory = App\SubCategory::all();
@@ -304,11 +304,11 @@ $data['title1'] = 'Child Categories';
                     </div>
                     <div class="row">
                       <div class="col-md-10">
-                        <label for="subcategory">{{ __('SubCategory') }}</label>
+                        <label for="sub category">{{ __('Sub Category') }}</label>
                         <select name="subcategories" mt-6name="subcategories" id="upload_id"
                           class="form-control select2">
                           <option value="0">{{ __('Please Select') }}
-                            {{ __('SubCategory') }}</option>
+                            {{ __('Sub Category') }}</option>
                           @foreach($subcategory as $cat)
                           <option value="{{$cat->id}}">{{$cat->title}}</option>
                           @endforeach

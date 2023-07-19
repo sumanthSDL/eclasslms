@@ -3809,7 +3809,7 @@ Module::find('Googleclassroom')->isEnabled())
             @foreach($testi as $tes)
             <div class="item testi-block text-center">
                 <div class="testi-block-images">
-                    <img src="{{ url('images/testimonial/testimonial.png') }}" class="img-fluid" alt=""> 
+                    <img src="{{ url('images/testimonial/color.jpg') }}" class="img-fluid" alt="">    
                 </div>
                 <div class="testi-block-one">
                     <div class="testi-img text-center">

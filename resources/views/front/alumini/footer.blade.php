@@ -45,7 +45,7 @@ $gets = App\Breadcum::first();
                     @endif  
                     </div>
                     <div class="alumini-dtl text-center">
-                        <h5 class="alumini-heading mb-2">{{ $data->user->fname }} {{ $data->user->lname }}</h5>
+                        <h5 class="alumini-heading mb-2" data-toggle="tooltip" data-title="{{ __('Alumni') }}">{{ $data->user->fname }} {{ $data->user->lname }}</h5> <!-- Add the data-toggle and data-title attributes -->
                         <div class="alumini-email mb-2">{{ $data->user->email }}</div>
                         <div class="alumini-no mb-2">{{ $data->user->mobile }}</div>
                         <a href="{{ url('footer/update',$data->id) }}" type="" class="btn btn-primary">{{ __('View') }}</a>

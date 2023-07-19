@@ -12,7 +12,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleSmallModalLabel">{{ __('Add Subcategory') }}</h5>
+        <h5 class="modal-title" id="exampleSmallModalLabel">{{ __('Add Sub Category') }}</h5>
 
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
@@ -35,8 +35,8 @@
                 
           <div class="row">
             <div class="col-sm-12">
-              <label for="exampleInputTit1e">{{ __('SubCategory') }}:<sup class="redstar">*</sup></label>
-              <input type="text" class="form-control" name="title" id="exampleInputTitle" placeholder="Enter Your subcategory" value="">
+              <label for="exampleInputTit1e">{{ __('Sub Category') }}:<sup class="redstar">*</sup></label>
+              <input type="text" class="form-control" name="title" id="exampleInputTitle" placeholder="Enter Your sub category" value="">
             </div>
             <br>
           </div>

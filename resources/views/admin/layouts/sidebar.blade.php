@@ -179,12 +179,12 @@
                                             @endcan
                                             @can(['subcategories.view'])
                                             <li class="{{ Nav::isResource('subcategory') }}"><a
-                                                    href="{{url('subcategory')}}">{{ __('SubCategory') }}</a>
+                                                    href="{{url('subcategory')}}">{{ __('Sub Category') }}</a>
                                             </li>
                                             @endcan
                                             @can(['childcategories.view'])
                                             <li class="{{ Nav::isResource('childcategory') }}"><a
-                                                    href="{{url('childcategory')}}">{{ __('ChildCategory') }}</a>
+                                                    href="{{url('childcategory')}}">{{ __('Child Category') }}</a>
                                             </li>
                                             @endcan
                                         </ul>
@@ -291,7 +291,7 @@
                                             </li>
 
                                             <li class="{{ Nav::isRoute('meeting.show') }}"><a
-                                                    href="{{route('meeting.show')}}">{{ __('AllMeetings') }}</a>
+                                                    href="{{route('meeting.show')}}">{{ __('All Meetings') }}</a>
                                             </li>
 
                                         </ul>
@@ -312,7 +312,7 @@
                                                     href="{{ route('bbl.setting') }}">{{ __('Settings') }}</a>
                                             </li>
                                             <li class="{{ Nav::isRoute('bbl.all.meeting') }}"><a
-                                                    href="{{ route('bbl.all.meeting') }}">{{ __('ListMeetings') }}</a>
+                                                    href="{{ route('bbl.all.meeting') }}">{{ __('List Meetings') }}</a>
                                             </li>
                                             <li class="{{ Nav::isRoute('download.meeting') }}"><a
                                                     href="{{ route('download.meeting') }}">{{ __('Recorded') }}</a>
@@ -362,12 +362,12 @@
                                     </li>
                                     @endif
 
-                                    @if(Module::find('Googleclassroom') && Module::find('googleclassroom')->isEnabled())
+                                    @if(Module::find('Googleclassroom') && Module::find('google classroom')->isEnabled())
                                     @include('googleclassroom::layouts.admin_sidebar_menu')
                                     @endif
                                     <!-- Jitsi Meeting end -->
                                     <li class="{{ Nav::isResource('meeting-recordings') }}"><a
-                                            href="{{url('meeting-recordings')}}"><span>{{ __('MeetingRecordings') }}</span></a>
+                                            href="{{url('meeting-recordings')}}"><span>{{ __('Meeting Recordings') }}</span></a>
                                     </li>
 
                                 </ul>
@@ -591,7 +591,7 @@
                             @endcan
                             <!-- faq start  -->
                             @canany(['faq.faq-student.view','faq.faq-instructor.view'])
-                            <li class="{{ Nav::isResource('faq') }} {{ Nav::isResource('faqinstructor') }}">
+                            <li class="{{ Nav::isResource('faq') }} {{ Nav::isResource('faq instructor') }}">
                                 <a href="javaScript:void();">
                                     <i
                                         class="feather icon-help-circle text-secondary"></i><span>{{ __('Faq') }}</span><i
@@ -600,7 +600,7 @@
                                 <ul class="vertical-submenu">
 
                                     <li class="{{ Nav::isResource('faq') }}">
-                                        <a href="{{url('faq')}}">{{ __('FaqStudent') }}</a>
+                                        <a href="{{url('faq')}}">{{ __('Faq Student') }}</a>
                                     </li>
 
                                     <li class="{{ Nav::isResource('faqinstructor') }}">

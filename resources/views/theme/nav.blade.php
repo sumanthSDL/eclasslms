@@ -250,34 +250,34 @@
                         <ul>
                             @if (Auth::User()->role == 'admin')
                                 <a target="_blank" href="{{ url('/admins') }}">
-                                    <li><i data-feather="pie-chart"></i>{{ __('AdminDashboard') }}</li>
+                                    <li><i data-feather="pie-chart"></i>{{ __('Admin Dashboard') }}</li>
                                 </a>
                             @endif
                             @if (Auth::User()->role == 'instructor')
                                 <a target="_blank" href="{{ url('/instructor') }}">
-                                    <li><i data-feather="pie-chart"></i>{{ __('InstructorDashboard') }}</li>
+                                    <li><i data-feather="pie-chart"></i>{{ __('Instructor Dashboard') }}</li>
                                 </a>
                             @endif
 
                             <a href="{{ route('mycourse.show') }}">
-                                <li><i data-feather="book-open"></i>{{ __('MyCourses') }}</li>
+                                <li><i data-feather="book-open"></i>{{ __('My Courses') }}</li>
                             </a>
 
                             <a href="{{ route('wishlist.show') }}">
-                                <li><i data-feather="heart"></i>{{ __('MyWishlist') }}</li>
+                                <li><i data-feather="heart"></i>{{ __('My Wishlist') }}</li>
                             </a>
 
                             <a href="{{ route('purchase.show') }}">
-                                <li><i data-feather="shopping-cart"></i>{{ __('PurchaseHistory') }}</li>
+                                <li><i data-feather="shopping-cart"></i>{{ __('Purchase History') }}</li>
                             </a>
                             <a href="{{ route('profile.show', Auth::User()->id) }}">
-                                <li><i data-feather="user"></i>{{ __('UserProfile') }}</li>
+                                <li><i data-feather="user"></i>{{ __('User Profile') }}</li>
                             </a>
                             @if (Auth::User()->role == 'user')
                                 @if ($gsetting->instructor_enable == 1)
                                     <a href="#" data-toggle="modal" data-target="#myModalinstructor"
                                         title="Become An Instructor">
-                                        <li><i data-feather="shield"></i>{{ __('BecomeAnInstructor') }}</li>
+                                        <li><i data-feather="shield"></i>{{ __('Become An Instructor') }}</li>
                                     </a>
                                 @endif
                             @endif
@@ -290,7 +290,7 @@
                             @if (env('ENABLE_INSTRUCTOR_SUBS_SYSTEM') == 1)
                                 @if (Auth::User()->role == 'instructor')
                                     <a href="{{ route('plan.page') }}">
-                                        <li><i data-feather="tag"></i>{{ __('InstructorPlan') }}</li>
+                                        <li><i data-feather="tag"></i>{{ __('Instructor Plan') }}</li>
                                     </a>
                                 @endif
                             @endif
@@ -322,7 +322,7 @@
 
                                 @if (isset($wallet_settings) && $wallet_settings->status == 1)
                                     <a href="{{ url('/wallet') }}">
-                                        <li><i class="icon-wallet icons"></i>{{ __('MyWallet') }}</li>
+                                        <li><i class="icon-wallet icons"></i>{{ __('My Wallet') }}</li>
                                     </a>
                                 @endif
 
@@ -351,7 +351,7 @@
                                 @endif
                             @endif
                             <a href="{{ route('my.leaderboard') }}">
-                                <li><i class="icon-chart icons"></i>{{ __('MyLeaderboard') }}</li>
+                                <li><i class="icon-chart icons"></i>{{ __('My Leaderboard') }}</li>
                             </a>
                             @if (Auth::User()->role == 'user')
                                 <a href="{{ route('studentprofile') }}">
@@ -563,7 +563,7 @@
                                                     </ul>
                                                 </div>
                                                 <div id="notificationFooter"><a
-                                                        href="{{ route('deleteNotification') }}">{{ __('ClearAll') }}</a>
+                                                        href="{{ route('deleteNotification') }}">{{ __('Clear All') }}</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -727,14 +727,14 @@
                                                         @if (Auth::User()->role == 'admin')
                                                             <a target="_blank" href="{{ url('/admins') }}">
                                                                 <li><i
-                                                                        data-feather="pie-chart"></i>{{ __('AdminDashboard') }}
+                                                                        data-feather="pie-chart"></i>{{ __('Admin Dashboard') }}
                                                                 </li>
                                                             </a>
                                                         @endif
                                                         @if (Auth::User()->role == 'instructor')
                                                             <a target="_blank" href="{{ url('/instructor') }}">
                                                                 <li><i
-                                                                        data-feather="pie-chart"></i>{{ __('InstructorDashboard') }}
+                                                                        data-feather="pie-chart"></i>{{ __('Instructor Dashboard') }}
                                                                 </li>
                                                             </a>
                                                         @endif
@@ -742,26 +742,26 @@
 
                                                         @if ($drop->my_courses == '1')
                                                             <a href="{{ route('mycourse.show') }}">
-                                                                <li><i data-feather="book-open"></i>{{ __('MyCourses') }}
+                                                                <li><i data-feather="book-open"></i>{{ __('My Courses') }}
                                                                 </li>
                                                             </a>
                                                         @endif
                                                         @if ($drop->my_wishlist == '1')
                                                             <a href="{{ route('wishlist.show') }}">
-                                                                <li><i data-feather="heart"></i>{{ __('MyWishlist') }}
+                                                                <li><i data-feather="heart"></i>{{ __('My Wishlist') }}
                                                                 </li>
                                                             </a>
                                                         @endif
                                                         @if ($drop->purchased_history == '1')
                                                             <a href="{{ route('purchase.show') }}">
                                                                 <li><i
-                                                                        data-feather="shopping-cart"></i>{{ __('PurchaseHistory') }}
+                                                                        data-feather="shopping-cart"></i>{{ __('Purchase History') }}
                                                                 </li>
                                                             </a>
                                                         @endif
                                                         @if ($drop->my_profile == '1')
                                                             <a href="{{ route('profile.show', Auth::User()->id) }}">
-                                                                <li><i data-feather="user"></i>{{ __('UserProfile') }}
+                                                                <li><i data-feather="user"></i>{{ __('User Profile') }}
                                                                 </li>
                                                             </a>
                                                         @endif
@@ -771,7 +771,7 @@
                                                                     data-target="#myModalinstructor"
                                                                     title="Become An Instructor">
                                                                     <li><i
-                                                                            data-feather="shield"></i>{{ __('BecomeAnInstructor') }}
+                                                                            data-feather="shield"></i>{{ __('Become An Instructor') }}
                                                                     </li>
                                                                 </a>
                                                             @endif
@@ -788,7 +788,7 @@
                                                             @if (Auth::User()->role == 'instructor')
                                                                 <a href="{{ route('plan.page') }}">
                                                                     <li><i
-                                                                            data-feather="tag"></i>{{ __('InstructorPlan') }}
+                                                                            data-feather="tag"></i>{{ __('Instructor Plan') }}
                                                                     </li>
                                                                 </a>
                                                             @endif
@@ -822,7 +822,7 @@
                                                             @if (isset($wallet_settings) && $wallet_settings->status == 1)
                                                                 <a href="{{ url('/wallet') }}">
                                                                     <li><i
-                                                                            class="icon-wallet icons"></i>{{ __('MyWallet') }}
+                                                                            class="icon-wallet icons"></i>{{ __('My Wallet') }}
                                                                     </li>
                                                                 </a>
                                                             @endif
@@ -860,7 +860,7 @@
                                                         @if ($drop->my_leadership == '1')
                                                             <a href="{{ route('my.leaderboard') }}">
                                                                 <li><i
-                                                                        class="icon-chart icons"></i>{{ __('MyLeaderboard') }}
+                                                                        class="icon-chart icons"></i>{{ __('My Leaderboard') }}
                                                                 </li>
                                                             </a>
                                                         @endif
@@ -949,14 +949,14 @@
                                                     @if (Auth::User()->role == 'admin')
                                                         <a target="_blank" href="{{ url('/admins') }}">
                                                             <li><i
-                                                                    data-feather="pie-chart"></i>{{ __('AdminDashboard') }}
+                                                                    data-feather="pie-chart"></i>{{ __('Admin Dashboard') }}
                                                             </li>
                                                         </a>
                                                     @endif
                                                     @if (Auth::User()->role == 'instructor')
                                                         <a target="_blank" href="{{ url('/instructor') }}">
                                                             <li><i
-                                                                    data-feather="pie-chart"></i>{{ __('InstructorDashboard') }}
+                                                                    data-feather="pie-chart"></i>{{ __('Instructor Dashboard') }}
                                                             </li>
                                                         </a>
                                                     @endif
@@ -964,19 +964,19 @@
 
 
                                                     <a href="{{ route('mycourse.show') }}">
-                                                        <li><i data-feather="book-open"></i>{{ __('MyCourses') }}</li>
+                                                        <li><i data-feather="book-open"></i>{{ __('My Courses') }}</li>
                                                     </a>
 
                                                     <a href="{{ route('wishlist.show') }}">
-                                                        <li><i data-feather="heart"></i>{{ __('MyWishlist') }}</li>
+                                                        <li><i data-feather="heart"></i>{{ __('My Wishlist') }}</li>
                                                     </a>
                                                     <a href="{{ route('purchase.show') }}">
                                                         <li><i
-                                                                data-feather="shopping-cart"></i>{{ __('PurchaseHistory') }}
+                                                                data-feather="shopping-cart"></i>{{ __('Purchase History') }}
                                                         </li>
                                                     </a>
                                                     <a href="{{ route('profile.show', Auth::User()->id) }}">
-                                                        <li><i data-feather="user"></i>{{ __('UserProfile') }}</li>
+                                                        <li><i data-feather="user"></i>{{ __('User Profile') }}</li>
                                                     </a>
                                                     @if (Auth::User()->role == 'user')
                                                         @if ($gsetting->instructor_enable == 1)
@@ -984,7 +984,7 @@
                                                                 data-target="#myModalinstructor"
                                                                 title="Become An Instructor">
                                                                 <li><i
-                                                                        data-feather="shield"></i>{{ __('BecomeAnInstructor') }}
+                                                                        data-feather="shield"></i>{{ __('Become An Instructor') }}
                                                                 </li>
                                                             </a>
                                                         @endif
@@ -1000,7 +1000,7 @@
                                                     @if (env('ENABLE_INSTRUCTOR_SUBS_SYSTEM') == 1)
                                                         @if (Auth::User()->role == 'instructor')
                                                             <a href="{{ route('plan.page') }}">
-                                                                <li><i data-feather="tag"></i>{{ __('InstructorPlan') }}
+                                                                <li><i data-feather="tag"></i>{{ __('Instructor Plan') }}
                                                                 </li>
                                                             </a>
                                                         @endif
@@ -1027,7 +1027,7 @@
                                                     @if (Schema::hasTable('affiliate') && Schema::hasTable('wallet_settings'))
                                                         @if (isset($wallet_settings) && $wallet_settings->status == 1)
                                                             <a href="{{ url('/wallet') }}">
-                                                                <li><i class="icon-wallet icons"></i>{{ __('MyWallet') }}
+                                                                <li><i class="icon-wallet icons"></i>{{ __('My Wallet') }}
                                                                 </li>
                                                             </a>
                                                         @endif
@@ -1058,7 +1058,7 @@
                                                         @endif
                                                     @endif
                                                     <a href="{{ route('my.leaderboard') }}">
-                                                        <li><i class="icon-chart icons"></i>{{ __('MyLeaderboard') }}
+                                                        <li><i class="icon-chart icons"></i>{{ __('My Leaderboard') }}
                                                         </li>
                                                     </a>
                                                     @if (Auth::User()->role == 'user')

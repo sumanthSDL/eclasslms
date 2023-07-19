@@ -53,8 +53,8 @@
 
             <div class="row">
               <div class="col-md-12">
-                <label for="exampleInputSlug">{{ __('Select SubCategory') }}<span class="redstar">*</span></label>
-                <select name="subcategory_id" id="upload_id" class="form-control select2">
+                <label for="exampleInputSlug">{{ __('Select Sub Category') }}<span class="redstar">*</span></label>
+                <select name="sub category_id" id="upload_id" class="form-control select2">
                   @php
                     $subcategory = App\SubCategory::all();
                   @endphp  

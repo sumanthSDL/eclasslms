@@ -52,13 +52,13 @@
               </div>
 
               <div class="col-md-5">
-                <label for="exampleInputTit1e">{{ __('SubCategory') }}</label>
+                <label for="exampleInputTit1e">{{ __('Sub Category') }}</label>
                 <select name="subcategories" id="upload_id" class="form-control select2">
                 </select>
               </div>
 
               <div class="col-md-2">
-                <label for="exampleInputTit1e">{{ __('SubCategory') }}</label>
+                <label for="exampleInputTit1e">{{ __('Sub Category') }}</label>
                 <br>
                 <button type="button" data-dismiss="modal" data-toggle="modal" data-target="#myModal7" title="AddCategory" class="btn btn-md btn-primary">{{ __('Add') }}</button>
               </div>

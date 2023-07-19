@@ -21,7 +21,7 @@ $gets = App\Breadcum::first();
             <div class="row">
                 <div class="col-lg-6">
                     <div class="bredcrumb-dtl">
-                        <h1 class="wishlist-home-heading">{{ __('Alumini') }}</h1>
+                        <h1 class="wishlist-home-heading">{{ __('Alumni') }}</h1>
                     </div>
                 </div>
             </div>
@@ -89,12 +89,12 @@ $gets = App\Breadcum::first();
                         </li>
                         <li>
                             <i class="fa fa-check"></i>
-                            <a href="{{ route('verifaction') }}" title="{{ __('Verifaction') }}">{{ __('Verifaction') }}</a>
+                            <a href="{{ route('verifaction') }}" title="{{ __('Verifaction') }}">{{ __('Verification') }}</a>
                         </li>
                         {{-- @if(Auth::User()->role == "user") --}}
                         <li>
 								<i class="fas fa-user"></i>
-								<a href="{{ route('front.alumini') }}" title="{{ __('Alumini') }}">{{ __('Alumini') }}</a>
+								<a href="{{ route('front.alumini') }}" title="{{ __('Alumini') }}">{{ __('Alumni') }}</a>
 							</li>
                         {{-- @endif --}}
                     </ul>

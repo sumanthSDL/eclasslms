@@ -5,12 +5,12 @@
 $data['heading'] = 'Payment Settings';
 $data['title'] = 'Payment Settings';
 ?>
-@include('admin.layouts.topbar',$data)
+@include('admin.layouts.topbar', $data)
 <div class="contentbar">
   @if ($errors->any())  
   <div class="alert alert-danger" role="alert">
   @foreach($errors->all() as $error)     
-  <p>{{ $error}}<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  <p>{!! $error !!}<button type="button" class="close" data-dismiss="alert" aria-label="Close">
   <span aria-hidden="true" style="color:red;">&times;</span></button></p>
       @endforeach  
   </div>
@@ -35,15 +35,16 @@ $data['title'] = 'Payment Settings';
 				<select class="select2-single form-control"  name="type" id="paytype" required>
 					<option value="none" selected disabled hidden >{{ __('ChoosePaymentType') }}</option>
 
-					@if($isetting['paytm_enable'] == 1)
-						<option {{ $user->prefer_pay_method == 'paytm' ? 'selected' : ''}} value="paytm">{{ __('Paytm') }}</option>
-					@endif
-					@if($isetting['paypal_enable'] == 1)
-					<option {{ $user->prefer_pay_method == 'paypal' ? 'selected' : ''}} value="paypal">{{ __('Paypal') }}</option>
-					@endif
-					@if($isetting['bank_enable'] == 1)
-					<option {{ $user->prefer_pay_method == 'banktransfer' ? 'selected' : ''}} value="bank">{{ __('BankTransfer') }}</option>
-					@endif
+					@if(isset($isetting['paytm_enable']) && $isetting['paytm_enable'] == 1)
+    <option {{ $user->prefer_pay_method == 'paytm' ? 'selected' : ''}} value="paytm">{{ __('Paytm') }}</option>
+@endif
+@if(isset($isetting['paypal_enable']) && $isetting['paypal_enable'] == 1)
+    <option {{ $user->prefer_pay_method == 'paypal' ? 'selected' : ''}} value="paypal">{{ __('Paypal') }}</option>
+@endif
+@if(isset($isetting['bank_enable']) && $isetting['bank_enable'] == 1)
+    <option {{ $user->prefer_pay_method == 'banktransfer' ? 'selected' : ''}} value="bank">{{ __('BankTransfer') }}</option>
+@endif
+
 				</select>
             </div>
        
@@ -52,12 +53,14 @@ $data['title'] = 'Payment Settings';
 
 			
 				<div class="form-group col-md-12" id="paypalpayment"  style="d-none;">
-					@if($isetting['paypal_enable'] == 1)
-					<div id="paypalpayment" @if($user['prefer_pay_method'] == "banktransfer" || $user['prefer_pay_method'] == "paytm" ) class="display-none" @endif>
-						<h5 class="box-title">{{ __('PAYPALPAYMENT') }}</h5>
-						<label for="pay_cid">{{ __('PaypalEmail') }}<sup class="redstar">*</sup></label>
-						<input value="{{ $user['paypal_email'] }}" autofocus name="paypal_email" type="text" class="form-control" placeholder="Enter Paypal Email"/>
-						@endif
+				@if(isset($isetting['paypal_enable']) && $isetting['paypal_enable'] == 1)
+    <div id="paypalpayment" @if($user['prefer_pay_method'] == "banktransfer" || $user['prefer_pay_method'] == "paytm" ) class="display-none" @endif>
+        <h5 class="box-title">{{ __('PAYPALPAYMENT') }}</h5>
+        <label for="pay_cid">{{ __('PaypalEmail') }}<sup class="redstar">*</sup></label>
+        <input value="{{ $user['paypal_email'] }}" autofocus name="paypal_email" type="text" class="form-control" placeholder="Enter Paypal Email"/>
+    </div>
+@endif
+
 					</div>
 				</div>
 		
@@ -68,21 +71,22 @@ $data['title'] = 'Payment Settings';
 
 		
             <div class="form-group col-md-12" id="paytmpayment" >
-				@if($isetting['paytm_enable'] == 1)
-				<div id="paytmpayment" @if($user['prefer_pay_method'] == "banktransfer" || $user['prefer_pay_method'] == "paypal" ) class="display-none" @endif>
-					<h5 class="box-title">{{ __('PAYTMPAYMENT') }}</h5>
-					<label for="pay_cid">{{ __('PaytmMobileNo') }}<sup class="redstar">*</sup></label>
-					<input value="{{ $user['paytm_mobile'] }}" autofocus name="paytm_mobile" type="text" class="form-control" placeholder="Enter Paytm Mobile No"/>
-               </div>
-			   @endif
+			@if(isset($isetting['paytm_enable']) && $isetting['paytm_enable'] == 1)
+    <div id="paytmpayment" @if($user['prefer_pay_method'] == "banktransfer" || $user['prefer_pay_method'] == "paypal" ) class="display-none" @endif>
+        <h5 class="box-title">{{ __('PAYTMPAYMENT') }}</h5>
+        <label for="pay_cid">{{ __('PaytmMobileNo') }}<sup class="redstar">*</sup></label>
+        <input value="{{ $user['paytm_mobile'] }}" autofocus name="paytm_mobile" type="text" class="form-control" placeholder="Enter Paytm Mobile No"/>
+    </div>
+@endif
+
 			</div>
 
 
 
             <div class="form-group col-md-12" id="bankpayment"   style="d-none;">
-				@if($isetting['bank_enable'] == 1)
-				<div id="bankpayment" @if($user['prefer_pay_method'] == "paypal" || $user['prefer_pay_method'] == "paytm" ) class="display-none" @endif>
-					<h5 class="box-title">{{ __('BankTransfer') }}</h5>
+			@if(isset($isetting['bank_enable']) && $isetting['bank_enable'] == 1)
+    <div id="bankpayment" @if($user['prefer_pay_method'] == "paypal" || $user['prefer_pay_method'] == "paytm" ) class="display-none" @endif>
+        <h5 class="box-title">{{ __('BankTransfer') }}</h5>
 					<div class="row">
 						<div class="col-md-6 mb-2">
 
@@ -172,4 +176,3 @@ $data['title'] = 'Payment Settings';
 </script>
 
 @endsection
-

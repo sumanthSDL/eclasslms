@@ -879,7 +879,7 @@
                                     </li>
                                     @can(['adsense-setting.manage'])
                                     <li class="{{ Nav::isRoute('adsense') }}">
-                                        <a href="{{url('/admin/adsensesetting')}}">{{ __('Adsense') }}</a>
+                                        <a href="{{url('/admin/adsensesetting')}}">{{ __('Ad sense') }}</a>
                                     </li>
                                     @endcan
 

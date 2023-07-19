@@ -53,12 +53,12 @@
 
                                             <li class="{{ Nav::isResource('subcategory') }}">
                                                 <a
-                                                    href="{{url('subcategory')}}">{{ __('SubCategory') }}</a>
+                                                    href="{{url('subcategory')}}">{{ __('Sub Category') }}</a>
                                             </li>
 
                                             <li class="{{ Nav::isResource('childcategory') }}">
                                                 <a
-                                                    href="{{url('childcategory')}}">{{ __('ChildCategory') }}</a>
+                                                    href="{{url('childcategory')}}">{{ __('Child Category') }}</a>
                                             </li>
 
                                         </ul>
@@ -69,11 +69,11 @@
                                     </li>
                                     <li class="{{ Nav::isRoute('courses.reject') }}">
                                         <a
-                                            href="{{route('courses.reject')}}">{{ __('RejectedCourses') }}</a>
+                                            href="{{route('courses.reject')}}">{{ __('Rejected Courses') }}</a>
                                     </li>
                                     <li class="{{ Nav::isRoute('courses.reject') }}">
                                         <a
-                                            href="{{route('courses.reject')}}">{{ __('Modified RejectedCourses') }}</a>
+                                            href="{{route('courses.reject')}}">{{ __('Modified Rejected Courses') }}</a>
                                     </li>
                                     <li class="{{ Nav::isResource('courselang') }}">
                                         <a href="{{url('courselang')}}">{{ __('Course') }}
@@ -87,7 +87,7 @@
                                     @endif
 
                                     <li class="{{ Nav::isRoute('quiz.review') }}"><a
-                                            href="{{route('quiz.review')}}"><span>{{ __('QuizReview') }}</span></a>
+                                            href="{{route('quiz.review')}}"><span>{{ __('Quiz Review') }}</span></a>
                                     </li>
                                 </ul>
                             </li>
@@ -104,20 +104,20 @@
                                     <li
                                         class="{{ Nav::isRoute('meeting.create') }} {{ Nav::isRoute('zoom.show') }} {{ Nav::isRoute('zoom.edit') }} {{ Nav::isRoute('zoom.setting') }} {{ Nav::isRoute('zoom.index') }}">
                                         <a href="javaScript:void();">
-                                            <i class=""></i> <span>{{ __('ZoomLiveMeetings') }}</span><i
+                                            <i class=""></i> <span>{{ __('Zoom Live Meetings') }}</span><i
                                                 class="feather icon-chevron-right"></i>
                                         </a>
                                         <ul class="vertical-submenu">
 
                                             <li class="{{ Nav::isRoute('zoom.setting') }}">
                                                 <a
-                                                    href="{{route('zoom.setting')}}">{{ __('ZoomSettings') }}</a>
+                                                    href="{{route('zoom.setting')}}">{{ __('Zoom Settings') }}</a>
                                             </li>
 
                                             <li
                                                 class="{{ Nav::isRoute('zoom.index') }} {{ Nav::isRoute('zoom.show') }} {{ Nav::isRoute('zoom.edit') }} {{ Nav::isRoute('meeting.create') }}">
                                                 <a
-                                                    href="{{route('zoom.index')}}">{{ __('ZoomDashboard') }}</a>
+                                                    href="{{route('zoom.index')}}">{{ __('Zoom Dashboard') }}</a>
                                             </li>
 
                                         </ul>
@@ -132,17 +132,17 @@
                                     <li
                                         class="{{ Nav::isRoute('bbl.setting') }} {{ Nav::isRoute('bbl.all.meeting') }} {{ Nav::isRoute('download.meeting') }}">
                                         <a href="javaScript:void();">
-                                            <i class=""></i> <span>{{ __('BigBlueMeetings') }}</span><i
+                                            <i class=""></i> <span>{{ __('Big Blue Meetings') }}</span><i
                                                 class="feather icon-chevron-right"></i>
                                         </a>
                                         <ul class="vertical-submenu">
                                             <li class="{{ Nav::isRoute('bbl.all.meeting') }}">
                                                 <a
-                                                    href="{{ route('bbl.all.meeting') }}">{{ __('ListMeetings') }}</a>
+                                                    href="{{ route('bbl.all.meeting') }}">{{ __('List Meetings') }}</a>
                                             </li>
                                             <li class="{{ Nav::isRoute('download.meeting') }}">
                                                 <a
-                                                    href="{{ route('download.meeting') }}">{{ __('MeetingRecordings') }}</a>
+                                                    href="{{ route('download.meeting') }}">{{ __('Meeting Recordings') }}</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -172,7 +172,7 @@
                                             </li>
                                             <li class="{{ Nav::isRoute('googlemeet.allgooglemeeting') }}">
                                                 <a
-                                                    href="{{route('googlemeet.allgooglemeeting')}}">{{ __('AllMeetings') }}</a>
+                                                    href="{{route('googlemeet.allgooglemeeting')}}">{{ __('All Meetings') }}</a>
                                             </li>
 
                                         </ul>
@@ -231,15 +231,15 @@
 
                                     <li>
                                         <a class="{{ Nav::isRoute('allrequestinvolve') }}"
-                                            href="{{route('allrequestinvolve')}}">{{ __('RequestToInvolve') }}</a>
+                                            href="{{route('allrequestinvolve')}}">{{ __('Request To Involve') }}</a>
                                     </li>
                                     <li>
                                         <a class="{{ Nav::isRoute('involve.request.index') }}"
-                                            href="{{route('involve.request.index')}}">{{ __('InvolvementRequests') }}</a>
+                                            href="{{route('involve.request.index')}}">{{ __('Involvement Requests') }}</a>
                                     </li>
                                     <li>
                                         <a class="{{ Nav::isRoute('involve.request') }}"
-                                            href="{{route('involve.request')}}">{{ __('InvolvedInCourse') }}</a>
+                                            href="{{route('involve.request')}}">{{ __('Involved In Course') }}</a>
                                     </li>
 
                                 </ul>
@@ -310,18 +310,18 @@
                             <!-- revenue start  -->
                             <li class="{{ Nav::isResource('pending.payout') }} {{ Nav::isRoute('admin.completed') }}">
                                 <a href="javaScript:void();" class="menu"><i class="feather icon-dollar-sign text-secondary"></i>
-                                    <span>{{ __('MyRevenue') }}<div class="sub-menu truncate">Pending Payout, Completed Payout</div></span>
+                                    <span>{{ __('My Revenue') }}<div class="sub-menu truncate">Pending Payout, Completed Payout</div></span>
                                     <i class="feather icon-chevron-right"></i>
                                 </a>
                                 <ul class="vertical-submenu">
 
                                     <li class="{{ Nav::isResource('pending.payout') }}">
-                                        <a href="{{route('pending.payout')}}">{{ __('PendingPayout') }}</a>
+                                        <a href="{{route('pending.payout')}}">{{ __('Pending Payout') }}</a>
                                     </li>
 
                                     <li class="{{ Nav::isRoute('admin.completed') }}">
                                         <a
-                                            href="{{route('admin.completed')}}">{{ __('CompletedPayout') }}</a>
+                                            href="{{route('admin.completed')}}">{{ __('Completed Payout') }}</a>
                                     </li>
 
                                 </ul>
@@ -340,7 +340,7 @@
                                     </li>
                                     <li class="{{ Nav::isResource('show/progress/report') }}">
                                         <a href="{{url('show/progress/report')}}">
-                                            Progress{{ __('Report') }}</a>
+                                            Progress {{ __('Report') }}</a>
                                     </li>
 
 
@@ -354,7 +354,7 @@
                             <li class="{{ Nav::isResource('instructor.pay') }}">
                                 <a href="{{route('instructor.pay')}}" class="menu">
                                     <i
-                                        class="feather icon-settings text-secondary"></i><span>{{ __('PayoutSettings') }}</span>
+                                        class="feather icon-settings text-secondary"></i><span>{{ __('Payout Settings') }}</span>
                                 </a>
                             </li>
                             @endif

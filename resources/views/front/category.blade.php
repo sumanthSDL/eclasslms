@@ -53,7 +53,7 @@ $gets = App\Breadcum::first();
 @if(isset($subcat))
 <section id="categories" class="categories-main-block categories-main-block-one">
     <div class="container-xl">
-        <h4 class="categories-heading">{{ __('SubCategories') }}</h4>
+        <h4 class="categories-heading">{{ __('Sub Categories') }}</h4>
         <div class="row">
             @foreach($subcat as $cat)
             @if($cat->status == 1)
@@ -76,7 +76,7 @@ $gets = App\Breadcum::first();
 @elseif(isset($childcat))
 <section id="categories" class="categories-main-block categories-main-block-one">
     <div class="container-xl">
-        <h4 class="categories-heading">{{ __('SubCategories') }}</h4>
+        <h4 class="categories-heading">{{ __('Sub Categories') }}</h4>
         <div class="row">
 
             @foreach($childcat as $cat)
