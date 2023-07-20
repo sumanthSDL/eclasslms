@@ -73,7 +73,7 @@
                             @endif
                             <li><a href="{{ route('front.service') }}" title="{{ __('Our Services') }}">{{ __('Our Services') }}</a></li>
                             <li><a href="{{ route('front.feature') }}" title="{{ __('Our Feature') }}">{{ __('Our Feature') }}</a></li>
-                            <li><a href="{{ route('footer.alumini') }}" title="{{ __('Our Alumini') }}">{{ __('Alumni') }}</a></li>
+                            <li><a href="{{ route('footer.alumini') }}" title="{{ __('Our Alumni') }}">{{ __('Alumni') }}</a></li>
                             @php
                             $menus = App\Menu::get();
                             $pages = App\Page::get();

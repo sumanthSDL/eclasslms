@@ -175,7 +175,7 @@ $gets = App\Breadcum::first();
 	                        		<label for="city_id">{{ __('City') }}:</label>
 					                <select id="grand" class="form-control js-example-basic-single" name="city_id">
 					                  <option value="none" selected disabled hidden> 
-					                    {{ __('SelectanOption') }}
+					                    {{ __('Select an Option') }}
 					                  </option>
 					                  @foreach ($cities as $c)
 					                    <option value="{{ $c->id }}" {{ $orders->city_id == $c->id ? 'selected' : ''}}>{{ $c->name }}
