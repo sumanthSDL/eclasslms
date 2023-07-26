@@ -22,7 +22,7 @@
             <div class="col-md-3">
               <label>{{ __('Category') }}<span class="redstar">*</span></label>
               <select name="category_id" id="category_id" class="form-control js-example-basic-single" required>
-                <option value="0">{{ __('SelectanOption') }}</option>
+                <option value="0">{{ __('Select an Option') }}</option>
                 @php
                 $category = App\Categories::all();
                 @endphp
@@ -33,13 +33,13 @@
               </select>
             </div>
             <div class="col-md-3">
-              <label>{{ __('SubCategory') }}:<span class="redstar">*</span></label>
+              <label>{{ __('Sub Category') }}:<span class="redstar">*</span></label>
               <select name="subcategory_id" id="upload_id" class="form-control js-example-basic-single">
                 @php
                 $subcategory =App\SubCategory::where('category_id', $cor->category_id)->get();
                 @endphp
                 <option value="none" selected disabled hidden>
-                  {{ __('SelectanOption') }}
+                  {{ __('Select an Option') }}
                 </option>
                 @if(!empty($subcategory))
                 @foreach($subcategory as $caat)
@@ -49,13 +49,13 @@
               </select>
             </div>
             <div class="col-md-3">
-              <label>{{ __('ChildCategory') }}:</label>
+              <label>{{ __('Child Category') }}:</label>
               <select name="childcategory_id" id="grand" class="form-control js-example-basic-single">
                 @php
                 $childcategory = App\ChildCategory::where('subcategory_id', $cor->subcategory_id)->get();
                 @endphp
                 <option value="none" selected disabled hidden>
-                  {{ __('SelectanOption') }}
+                  {{ __('Select an Option') }}
                 </option>
                 @if(!empty($childcategory))
                 @foreach($childcategory as $caat)
@@ -65,7 +65,7 @@
               </select>
             </div>
             <div class="col-md-3">
-              <label for="exampleInputSlug">{{ __('SelectUser') }}</label>
+              <label for="exampleInputSlug">{{ __('Select User') }}</label>
               <select name="user_id" class="form-control js-example-basic-single col-md-7 col-xs-12">
                 @if(Auth::user()->role == 'admin')
                 @foreach($users as $user)
@@ -109,10 +109,10 @@
               @php
               $languages = App\CourseLanguage::all();
               @endphp
-              <label for="exampleInputSlug">{{ __('SelectLanguage') }}: <span class="redstar">*</span></label>
+              <label for="exampleInputSlug">{{ __('Select Language') }}: <span class="redstar">*</span></label>
               <select name="language_id" class="form-control js-example-basic-single col-md-7 col-xs-12">
                 <option value="none" selected disabled hidden>
-                  {{ __('SelectanOption') }}
+                  {{ __('Select an Option') }}
                 </option>
                 @foreach($languages as $cat)
                 <option {{ $cor->language_id == $cat->id ? 'selected' : "" }} value="{{ $cat->id }}">{{ $cat->name }}</option>
@@ -126,10 +126,10 @@
               @php
               $ref_policy = App\RefundPolicy::all();
               @endphp
-              <label for="exampleInputSlug">{{ __('SelectRefundPolicy') }}</label>
+              <label for="exampleInputSlug">{{ __('Select Refund Policy') }}</label>
               <select name="refund_policy_id" class="form-control js-example-basic-single col-md-7 col-xs-12">
                 <option value="none" selected disabled hidden>
-                  {{ __('SelectanOption') }}
+                  {{ __('Select an Option') }}
                 </option>
                 @foreach($ref_policy as $ref)
                 <option {{ $cor->refund_policy_id == $ref->id ? 'selected' : "" }} value="{{ $ref->id }}">{{ $ref->name }}</option>
@@ -145,7 +145,7 @@
                 $institute = App\Institute::all();
                 @endphp
                 <option value="0" disabled hidden>
-                  {{ __('SelectanOption') }}
+                  {{ __('Select an Option') }}
                 </option>
                 @foreach($institute as $inst)
                 <option value="{{ $inst->id }}" {{$inst->id  == $cor->institude_id ? 'selected' : ''}}>{{ $inst->title }}</option>
@@ -161,7 +161,7 @@
                 $institute = App\Institute::where('user_id',Auth::user()->id)->get();
                 @endphp
                 <option value="0" disabled hidden>
-                  {{ __('SelectanOption') }}
+                  {{ __('Select an Option') }}
                 </option>
                 @foreach($institute as $inst)
                 <option value="{{ $inst->id }}" {{$inst->id  == $cor->institude_id ? 'selected' : ''}}>{{ $inst->title }}</option>
@@ -188,7 +188,7 @@
 
           <div class="row">
             <div class="col-md-6">
-              <label for="exampleInputDetails">{{ __('ShortDetail') }}:<sup class="redstar">*</sup></label>
+              <label for="exampleInputDetails">{{ __('Short Detail') }}:<sup class="redstar">*</sup></label>
               <textarea name="short_detail" rows="3" class="form-control">{!! $cor->short_detail !!}</textarea>
             </div>
             <div class="col-md-6">
@@ -207,14 +207,14 @@
               <label for="exampleInputSlug">{{ __('Level/Type Tags') }}</label>
               <select class="form-control js-example-basic-single" name="level_tags">
                 <option value="0" disabled hidden>
-                  {{ __('SelectanOption') }}
+                  {{ __('Select an Option') }}
                 </option>
 
                 <option {{ $cor->level_tags == 'trending' ? 'selected' : ''}} value="trending">{{ __('Trending') }}</option>
 
-                <option {{ $cor->level_tags == 'onsale' ? 'selected' : ''}} value="onsale">{{ __('Onsale') }}</option>
+                <option {{ $cor->level_tags == 'onsale' ? 'selected' : ''}} value="onsale">{{ __('On Sale') }}</option>
 
-                <option {{ $cor->level_tags == 'bestseller' ? 'selected' : ''}} value="bestseller">{{ __('Bestseller') }}</option>
+                <option {{ $cor->level_tags == 'bestseller' ? 'selected' : ''}} value="bestseller">{{ __('Best Seller') }}</option>
 
                 <option {{ $cor->level_tags == 'beginner' ? 'selected' : ''}} value="beginner">{{ __('Beginner') }}</option>
 
@@ -230,7 +230,7 @@
 
 
             <div class="col-md-6">
-              <label for="exampleInputSlug">{{ __('CourseTags') }}</label>
+              <label for="exampleInputSlug">{{ __('Course Tags') }}</label>
               <select class="select2-multi-select form-control" name="course_tags[]" multiple="multiple" size="5">
 
 
@@ -340,7 +340,7 @@
           </div>
           <div class="row">
             <div class="col-md-4">
-              <label for="exampleInputDetails">{{ __('Instructor InvolvementRequest') }}:</label><br>
+              <label for="exampleInputDetails">{{ __('Instructor Involvement Request') }}:</label><br>
               <label class="switch">
                 <input class="slider" type="checkbox" id="customSwitch6" name="involvement_request" {{ $cor->involvement_request==1 ? 'checked' : '' }} />
                 <span class="knob"></span>
@@ -353,7 +353,7 @@
 
 
           <div class="col-md-4">
-            <label for="exampleInputDetails">{{ __('PreviewVideo') }}:</label><br>
+            <label for="exampleInputDetails">{{ __('Preview Video') }}:</label><br>
             <label class="switch">
               <input class="slider" type="checkbox" id="customSwitch61" name="preview_type" {{ $cor->preview_type=="video" ? 'checked' : '' }} />
 
@@ -366,7 +366,7 @@
 
             <div style="{{ $cor->preview_type == 'url' ? 'display:none' : '' }}" id="document1">
               <br>
-              <label for="exampleInputSlug">{{ __('UploadVideo') }}: <sup class="redstar">*</sup></label>
+              <label for="exampleInputSlug">{{ __('Upload Video') }}: <sup class="redstar">*</sup></label>
               <!-- -------------- -->
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -374,7 +374,7 @@
                 </div>
                 <div class="custom-file">
                   <input type="file" class="custom-file-input" id="inputGroupFile01" name="video" value="{{ $cor->video }}" aria-describedby="inputGroupFileAddon01">
-                  <label class="custom-file-label" for="inputGroupFile01">{{ __('Choose file') }}</label>
+                  <label class="custom-file-label" for="inputGroupFile01">{{ __('Choose File') }}</label>
                 </div>
               </div>
               @if($cor->video !="")
@@ -506,7 +506,7 @@
 
         <div class="col-sm-3">
 
-          <label for="exampleInputDetails">{{ __('CertificateEnable') }}:</label><br>
+          <label for="exampleInputDetails">{{ __('Certificate Enable') }}:</label><br>
           <!--  -->
           <label class="switch">
             <input class="slider" type="checkbox" name="certificate_enable" id="customSwitch10" {{ $cor['certificate_enable'] == "1" ? 'checked' : '' }} />
@@ -517,7 +517,7 @@
 
         <div class="col-sm-3">
 
-          <label for="">{{ __('DripContent') }}: </label><br>
+          <label for="">{{ __('Drip Content') }}: </label><br>
           <label class="switch">
             <input class="slider" type="checkbox" name="drip_enable" {{ $cor['drip_enable'] == 1 ? 'checked' : '' }} />
             <span class="knob"></span>

@@ -232,7 +232,7 @@
                             class="{{ Nav::isRoute('allrequestinvolve') }} {{ Nav::isRoute('involve.request.index') }} {{ Nav::isRoute('involve.request') }}">
                             <a href="javaScript:void();">
                                 <i
-                                    class="feather icon-users text-secondary"></i><span>{{ __('MultipleInstructor') }}</span><i
+                                    class="feather icon-users text-secondary"></i><span>{{ __('Multiple Instructor') }}</span><i
                                     class="feather icon-chevron-right"></i>
                             </a>
                             <ul class="vertical-submenu">

@@ -21,7 +21,7 @@ $gets = App\Breadcum::first();
             <div class="row">
                 <div class="col-lg-6">
                     <div class="bredcrumb-dtl">
-                        <h1 class="wishlist-home-heading">{{ __('Contact us') }}</h1>
+                        <h1 class="wishlist-home-heading">{{ __('Contact Us') }}</h1>
                     </div>
                 </div>
             </div>

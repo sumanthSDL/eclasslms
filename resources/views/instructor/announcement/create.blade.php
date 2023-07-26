@@ -34,7 +34,7 @@ $data['title'] = 'Announcement';
                 <label for="exampleInputSlug">{{ __('Course') }}<span class="redstar">*</span></label>
                 <select name="course_id" class="form-control select2" required="">
                   <option value="none" selected disabled hidden> 
-                     {{ __('SelectanOption') }}
+                     {{ __('Select an Option') }}
                   </option>
                   @foreach($course as $cor)
                       <option required value="{{ $cor->id }}">{{ $cor->title }}</option>

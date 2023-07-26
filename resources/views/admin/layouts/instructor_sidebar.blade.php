@@ -224,7 +224,7 @@
                             <!-- MultipleInstructor start  -->
                             <li class="{{ Nav::isRoute('allrequestinvolve') }} {{ Nav::isRoute('involve.request.index') }} {{ Nav::isRoute('involve.request') }}">
                                 <a href="javaScript:void();" class="menu"><i class="feather icon-users text-secondary"></i>
-                                    <span>{{ __('MultipleInstructor') }}<div class="sub-menu truncate">Request To Involve, Involvement Requests, Involved In Course</div></span>
+                                    <span>{{ __('Multiple Instructor') }}<div class="sub-menu truncate">Request To Involve, Involvement Requests, Involved In Course</div></span>
                                     <i class="feather icon-chevron-right"></i>
                                 </a>
                                 <ul class="vertical-submenu">

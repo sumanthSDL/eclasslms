@@ -21,9 +21,9 @@ $data['title1'] = 'Subcategories';
 ><i class="feather icon-trash mr-2"></i> {{ __('Delete Selected') }}</button>
                 @endcan
                 @can('subcategories.create')
-              <button type="button" class="float-right btn btn-primary-rgba mr-2" data-toggle="modal" data-target="#create" title="{{ __('Add Subcategory') }}"
+              <button type="button" class="float-right btn btn-primary-rgba mr-2" data-toggle="modal" data-target="#create" title="{{ __('Add Sub Category') }}"
 >
-                <i class="feather icon-plus mr-2"></i>{{ __("Add Subcategory") }}</button>
+                <i class="feather icon-plus mr-2"></i>{{ __("Add Sub Category") }}</button>
           @endcan
           
                 
@@ -43,7 +43,7 @@ $data['title1'] = 'Subcategories';
                     #</th>
                   <th>{{ __('Icon') }}</th>
                   <th>{{ __('Category') }}</th>
-                  <th>{{ __('SubCategory') }}</th>
+                  <th>{{ __('Sub Category') }}</th>
                   <th>{{ __('Slug') }}</th>
                   <th>{{ __('Status') }}</th>
                   <th>{{ __('Action') }}</th>
@@ -130,7 +130,7 @@ $data['title1'] = 'Subcategories';
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h5 class="modal-title" id="exampleSmallModalLabel">{{ __('Edit Subcategory') }}</h5>
+                            <h5 class="modal-title" id="exampleSmallModalLabel">{{ __('Edit Sub Category') }}</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="{{ __('Close') }}"
 >
                               <span aria-hidden="true">&times;</span>
@@ -250,7 +250,7 @@ $data['title1'] = 'Subcategories';
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleSmallModalLabel">{{ __('Add New Subcategory') }}</h5>
+                    <h5 class="modal-title" id="exampleSmallModalLabel">{{ __('Add New Sub Category') }}</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="{{ __('Close') }}"
 >
                       <span aria-hidden="true">&times;</span>
@@ -286,7 +286,7 @@ $data['title1'] = 'Subcategories';
                             <br>
                             <div class="row">
                               <div class="col-md-6">
-                                <label for="exampleInputTit1e">{{ __('SubCategory') }}:<sup
+                                <label for="exampleInputTit1e">{{ __('Sub Category') }}:<sup
                                     class="redstar">*</sup></label>
                                 <input type="text" class="form-control" name="title" id="exampleInputTitle"
                                   placeholder="Enter Your subcategory" value="">

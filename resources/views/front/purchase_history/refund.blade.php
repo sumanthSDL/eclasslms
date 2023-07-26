@@ -71,7 +71,7 @@
 	                        <label for="bio">{{ __('Refund Mode') }}</label>
 	                        <select id="refund_mode" class="form-control js-example-basic-single" name="refund_mode" required>
 		                       	<option value="none" selected disabled hidden> 
-			                      {{ __('SelectanOption') }}
+			                      {{ __('Select an Option') }}
 			                    </option>
 			                    @if($order->payment_method == 'PayPal' || $order->payment_method == 'Stripe' ||  $order->payment_method == 'Paystack' || $order->payment_method == 'Instamojo' ||  $order->payment_method == 'PayTM' || $order->payment_method == 'RazorPay' )
 			                    <option value="original">{{__('Orginal Source')}}</option>
@@ -97,7 +97,7 @@
 		                        <label for="bio">{{ __('Select Bank') }}</label>
 		                        <select style="width: 100%" id="bank_id" class="form-control js-example-basic-single" name="bank_id">
 			                       	<option value="none" selected disabled hidden> 
-				                      {{ __('Select anO ption') }}
+				                      {{ __('Select an Option') }}
 				                    </option>
 
 				                    @foreach($user_bank as $bank)

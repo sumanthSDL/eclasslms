@@ -36,19 +36,19 @@ $data['title1'] = 'Create a Course';
               <div class="col-md-3">
                 <label>{{ __('Category') }}:<span class="redstar">*</span></label>
                 <select name="category_id" id="category_id" class="form-control select2">
-                  <option value="0">{{ __('SelectanOption') }}</option>
+                  <option value="0">{{ __('Select an Option') }}</option>
                   @foreach($category as $cate)
                   <option value="{{$cate->id}}">{{$cate->title}}</option>
                   @endforeach
                 </select>
               </div>
               <div class="col-md-3">
-                <label>{{ __('SubCategory') }}:<span class="redstar">*</span></label>
+                <label>{{ __('Sub Category') }}:<span class="redstar">*</span></label>
                 <select name="subcategory_id" id="upload_id" class="form-control select2">
                 </select>
               </div>
               <div class="col-md-3">
-                <label>{{ __('ChildCategory') }}:</label>
+                <label>{{ __('Child Category') }}:</label>
                 <select name="childcategory_id" id="grand" class="form-control select2"></select>
               </div>
               <div class="col-md-3">
@@ -101,7 +101,7 @@ $data['title1'] = 'Create a Course';
                 <label for="exampleInputSlug">{{ __('Select Refund Policy') }} <span class="redstar">*</span></label>
                 <select name="refund_policy_id" class="form-control select2">
                   <option value="none" selected disabled hidden>
-                    {{ __('SelectanOption') }}
+                    {{ __('Select an Option') }}
                   </option>
                   @foreach($ref_policy as $ref)
                   <option value="{{ $ref->id }}">{{ $ref->name }}</option>
@@ -118,7 +118,7 @@ $data['title1'] = 'Create a Course';
                   $institute = App\Institute::where('status' ,'1')->get();
                   @endphp
                   <option value="none" selected disabled hidden>
-                    {{ __('SelectanOption') }}
+                    {{ __('Select an Option') }}
                   </option>
                   @foreach($institute as $inst)
                   <option value="{{ $inst->id }}">{{ $inst->title }}</option>
@@ -135,7 +135,7 @@ $data['title1'] = 'Create a Course';
                   $institute = App\Institute::where('user_id',Auth::user()->id)->where('status' ,'1')->get();
                   @endphp
                   <option value="none" selected disabled hidden>
-                    {{ __('SelectanOption') }}
+                    {{ __('Select an Option') }}
                   </option>
                   @foreach($institute as $inst)
                   <option value="{{ $inst->id }}">{{ $inst->title }}</option>

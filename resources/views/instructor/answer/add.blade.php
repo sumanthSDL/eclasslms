@@ -42,7 +42,7 @@ $data['title1'] = 'Create a new answer';
                 <br>
                 <select name="question_id" required class="form-control select2">
                   <option value="none" selected disabled hidden> 
-                     {{ __('SelectanOption') }}
+                     {{ __('Select an Option') }}
                   </option>
                   @foreach($questions as $ques)
                     <option value="{{ $ques->id }}">{{ $ques->question}}</option>

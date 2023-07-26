@@ -112,7 +112,7 @@
                                     <li
                                         class="{{ Nav::isRoute('allrequestinvolve') }} {{ Nav::isRoute('involve.request.index') }} {{ Nav::isRoute('involve.request') }}">
                                         <a href="javaScript:void();">
-                                            <i class=""></i> <span>{{ __('MultipleInstructor') }}</span>
+                                            <i class=""></i> <span>{{ __('Multiple Instructor') }}</span>
                                         </a>
                                         <ul class="vertical-submenu">
 
@@ -476,7 +476,7 @@
                             @can(['attendance.manage'])
                             @if(isset($gsetting) && $gsetting->attandance_enable == 1)
                             <li class="{{ Nav::isResource('attandance') }}"><a href="{{url('attandance')}}"><i
-                                        class="feather icon-user text-secondary"></i><span>{{ __('Attandance') }}</span></a>
+                                        class="feather icon-user text-secondary"></i><span>{{ __('Attendance') }}</span></a>
                             </li>
                             @endif
                             @endcan
@@ -560,7 +560,7 @@
 
                                     <li class="{{ Nav::isResource('admin/report/view') }}">
                                         <a href="{{ route('order.report') }}">
-                                            {{ __('Financial reports') }} </a>
+                                            {{ __('Financial Report') }} </a>
                                     </li>
 
                                     <li class="{{ Nav::isResource('device-logs') }}">
@@ -570,7 +570,7 @@
                                         <a href="{{url('report/certificate')}}">{{ __('Certificate Report') }} </a>
                                     </li>
                                     <li class="{{ Nav::isResource('attand/report') }}">
-                                        <a href="{{url('attand/report')}}">{{ __('Attandance Report') }} </a>
+                                        <a href="{{url('attand/report')}}">{{ __('Attendance Report') }} </a>
                                     </li>
 
                                 </ul>

@@ -176,7 +176,7 @@ $gets = App\Breadcum::first();
                                     <ul>
                                         <li class="btm-10"><img src="{{ asset('images/icons/contact.png') }}"></li>
                                         <br>
-                                        <li class="text-white"><span>{{ __('Contact us') }}</span></li>
+                                        <li class="text-white"><span>{{ __('Contact Us') }}</span></li>
                                         <br>
                                         <li class="text-white">{{ __('Open a support ticket')}}</li>
                                     </ul>

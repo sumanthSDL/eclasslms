@@ -1,4 +1,4 @@
-<!-- Affiliate Refferal section start -->
+{{-- <!-- Affiliate Refferal section start -->
 @extends('theme.master')
 @section('title', 'Refer Link')
 @section('content')
@@ -163,4 +163,4 @@ var lineChart = new Chart(speedCanvas, {
   options: chartOptions
 });
 </script>
-@endsection
+@endsection --}}

@@ -157,7 +157,7 @@
                                         <ul class="vertical-submenu">
                                             @can(['categories.view'])
                                             <li class="{{ Nav::isResource('category') }}"><a
-                                                    href="{{url('category')}}">{{ __('Course category') }}</a>
+                                                    href="{{url('category')}}">{{ __('Course Category') }}</a>
                                             </li>
                                             @endcan
                                             @can(['subcategories.view'])
@@ -567,7 +567,7 @@
 
                                     <li class="{{ Nav::isResource('admin/report/view') }}">
                                         <a href="{{ route('order.report') }}">
-                                            {{ __('Financial reports') }} </a>
+                                            {{ __('Financial Report') }} </a>
                                     </li>
 
                                     <li class="{{ Nav::isResource('device-logs') }}">
@@ -577,7 +577,7 @@
                                         <a href="{{url('report/certificate')}}">{{ __('Certificate Report') }} </a>
                                     </li>
                                     <li class="{{ Nav::isResource('attand/report') }}">
-                                        <a href="{{url('attand/report')}}">{{ __('Attandance Report') }} </a>
+                                        <a href="{{url('attand/report')}}">{{ __('Attendance Report') }} </a>
                                     </li>
                                     {{-- <li class="{{ Nav::isResource('coupon/report') }}">
                                         <a href="{{url('coupon/report')}}">{{ __('Coupon Report') }} </a>
@@ -824,7 +824,7 @@
                                     @endcan
                                     @can(['front-settings.fact-slider.view'])
                                     <li class="{{ Nav::isRoute('fact') }}">
-                                        <a href="{{ url('fact') }}">{{ __('Fact Setting, ') }}{{ __('') }}</a>
+                                        <a href="{{ url('fact') }}">{{ __('Fact Setting ') }}{{ __('') }}</a>
                                     </li>
                                     @endcan
                                     @can(['join-an-instructor.manage'])

@@ -65,15 +65,15 @@
                                 @endif
                             @endif
                             @if(isset($widgets) && $widgets->about_enable == 1)
-                            <li><a href="{{ route('about.show') }}" title="{{ __('About us') }}">{{ __('About us') }}</a></li>
+                            <li><a href="{{ route('about.show') }}" title="{{ __('About Us') }}">{{ __('About Us') }}</a></li>
                             @endif
                             
                             @if(isset($widgets) && $widgets->contact_enable == 1)
-                            <li><a href="{{url('user_contact')}}" title="{{ __('Contact us') }}">{{ __('Contact us') }}</a></li>
+                            <li><a href="{{url('user_contact')}}" title="{{ __('Contact Us') }}">{{ __('Contact Us') }}</a></li>
                             @endif
                             <li><a href="{{ route('front.service') }}" title="{{ __('Our Services') }}">{{ __('Our Services') }}</a></li>
                             <li><a href="{{ route('front.feature') }}" title="{{ __('Our Feature') }}">{{ __('Our Feature') }}</a></li>
-                            <li><a href="{{ route('footer.alumini') }}" title="{{ __('Our Alumni') }}">{{ __('Alumni') }}</a></li>
+                            <li><a href="{{ route('footer.alumini') }}" title="{{ __('Alumni') }}">{{ __('Alumni') }}</a></li>
                             @php
                             $menus = App\Menu::get();
                             $pages = App\Page::get();
@@ -108,7 +108,7 @@
                             @endif
 
                             @if(isset($widgets) && $widgets->help_enable == 1)
-                            <li><a href="{{ route('help.show') }}" title="{{ __('Help&Support') }}">{{ __('Help & Support') }}</a></li>
+                            <li><a href="{{ route('help.show') }}" title="{{ __('Help & Support') }}">{{ __('Help & Support') }}</a></li>
                             @endif
                             @php
                             $menus = App\Menu::get();
