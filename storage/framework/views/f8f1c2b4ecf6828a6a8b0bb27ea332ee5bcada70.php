@@ -86,7 +86,7 @@
                                         <ul class="vertical-submenu">
                                             <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['categories.view'])): ?>
                                             <li class="<?php echo e(Nav::isResource('category')); ?>"><a
-                                                    href="<?php echo e(url('category')); ?>"><?php echo e(__('Course category')); ?></a>
+                                                    href="<?php echo e(url('category')); ?>"><?php echo e(__('Course Category')); ?></a>
                                             </li>
                                             <?php endif; ?>
                                             <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['subcategories.view'])): ?>
@@ -324,7 +324,7 @@
 
                                     <li class="<?php echo e(Nav::isResource('admin/report/view')); ?>">
                                         <a href="<?php echo e(route('order.report')); ?>">
-                                            <?php echo e(__('Financial reports')); ?> </a>
+                                            <?php echo e(__('Financial Report')); ?> </a>
                                     </li>
 
                                     <li class="<?php echo e(Nav::isResource('device-logs')); ?>">
@@ -334,7 +334,7 @@
                                         <a href="<?php echo e(url('report/certificate')); ?>"><?php echo e(__('Certificate Report')); ?> </a>
                                     </li>
                                     <li class="<?php echo e(Nav::isResource('attand/report')); ?>">
-                                        <a href="<?php echo e(url('attand/report')); ?>"><?php echo e(__('Attandance Report')); ?> </a>
+                                        <a href="<?php echo e(url('attand/report')); ?>"><?php echo e(__('Attendance Report')); ?> </a>
                                     </li>
                                     
                                 </ul>
@@ -562,7 +562,7 @@
                                     <?php endif; ?>
                                     <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['front-settings.fact-slider.view'])): ?>
                                     <li class="<?php echo e(Nav::isRoute('fact')); ?>">
-                                        <a href="<?php echo e(url('fact')); ?>"><?php echo e(__('Fact Setting, ')); ?><?php echo e(__('')); ?></a>
+                                        <a href="<?php echo e(url('fact')); ?>"><?php echo e(__('Fact Setting ')); ?><?php echo e(__('')); ?></a>
                                     </li>
                                     <?php endif; ?>
                                     <?php if (app(\Illuminate\Contracts\Auth\Access\Gate::class)->check(['join-an-instructor.manage'])): ?>

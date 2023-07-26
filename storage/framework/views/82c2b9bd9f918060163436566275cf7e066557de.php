@@ -65,15 +65,15 @@
                                 <?php endif; ?>
                             <?php endif; ?>
                             <?php if(isset($widgets) && $widgets->about_enable == 1): ?>
-                            <li><a href="<?php echo e(route('about.show')); ?>" title="<?php echo e(__('About us')); ?>"><?php echo e(__('About us')); ?></a></li>
+                            <li><a href="<?php echo e(route('about.show')); ?>" title="<?php echo e(__('About Us')); ?>"><?php echo e(__('About Us')); ?></a></li>
                             <?php endif; ?>
                             
                             <?php if(isset($widgets) && $widgets->contact_enable == 1): ?>
-                            <li><a href="<?php echo e(url('user_contact')); ?>" title="<?php echo e(__('Contact us')); ?>"><?php echo e(__('Contact us')); ?></a></li>
+                            <li><a href="<?php echo e(url('user_contact')); ?>" title="<?php echo e(__('Contact Us')); ?>"><?php echo e(__('Contact Us')); ?></a></li>
                             <?php endif; ?>
                             <li><a href="<?php echo e(route('front.service')); ?>" title="<?php echo e(__('Our Services')); ?>"><?php echo e(__('Our Services')); ?></a></li>
                             <li><a href="<?php echo e(route('front.feature')); ?>" title="<?php echo e(__('Our Feature')); ?>"><?php echo e(__('Our Feature')); ?></a></li>
-                            <li><a href="<?php echo e(route('footer.alumini')); ?>" title="<?php echo e(__('Our Alumini')); ?>"><?php echo e(__('Alumni')); ?></a></li>
+                            <li><a href="<?php echo e(route('footer.alumini')); ?>" title="<?php echo e(__('Alumni')); ?>"><?php echo e(__('Alumni')); ?></a></li>
                             <?php
                             $menus = App\Menu::get();
                             $pages = App\Page::get();
@@ -108,7 +108,7 @@
                             <?php endif; ?>
 
                             <?php if(isset($widgets) && $widgets->help_enable == 1): ?>
-                            <li><a href="<?php echo e(route('help.show')); ?>" title="<?php echo e(__('Help&Support')); ?>"><?php echo e(__('Help & Support')); ?></a></li>
+                            <li><a href="<?php echo e(route('help.show')); ?>" title="<?php echo e(__('Help & Support')); ?>"><?php echo e(__('Help & Support')); ?></a></li>
                             <?php endif; ?>
                             <?php
                             $menus = App\Menu::get();
