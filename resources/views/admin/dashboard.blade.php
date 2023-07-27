@@ -686,7 +686,7 @@
                     'Dec'
                 ],
                 datasets: [{
-                    label: 'Monthly Registred Users',
+                    label: 'Monthly Registered Users',
                     backgroundColor: ["#506fe4", "#506fe4", "#506fe4", "#506fe4", "#506fe4",
                         "#506fe4", "#506fe4", "#506fe4", "#506fe4", "#506fe4", "#506fe4",
                         "#506fe4", "#506fe4"

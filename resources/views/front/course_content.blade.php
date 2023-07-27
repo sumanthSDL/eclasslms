@@ -45,7 +45,7 @@
                                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     @if(!empty($progress))
                                     <a class="dropdown-item"> 
-                                        {{ $read_count }} {{ __('of') }} {{ $total_count }}  {{ __('complete') }}
+                                        {{ $read_count }} {{ __('of') }} {{ $total_count }}  {{ __('Complete') }}
                                     </a>
                                     @else
                                     <a class="dropdown-item"> 
@@ -61,7 +61,7 @@
                                                 echo "0";
                                             }
                                         @endphp 
-                                        {{ __('complete')}} 
+                                        {{ __('Complete')}} 
                                     </a>
                                     @endif
                                     @if(!empty($progress))
@@ -85,7 +85,7 @@
                                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     @if(!empty($progress))
                                     <a class="dropdown-item"> 
-                                        {{ $read_count }} {{ __('of') }} {{ $total_count }}  {{ __('complete') }}
+                                        {{ $read_count }} {{ __('of') }} {{ $total_count }}  {{ __('Complete') }}
                                     </a>
                                     @else
                                     <a class="dropdown-item"> 
@@ -101,7 +101,7 @@
                                                 echo "0";
                                             }
                                         @endphp 
-                                        {{ __('complete')}} 
+                                        {{ __('Complete')}} 
                                     </a>
                                     @endif
                                     @if(!empty($progress))
@@ -407,7 +407,7 @@
                                 <div class="col-lg-6 col-sm-5">
                                     <div class="content-course-number">
                                         <ul>
-                                            <li>{{ __('students enrolled') }}: 
+                                            <li>{{ __('student enrolled') }}: 
                                                 @php
                                                     $data = App\Order::where('course_id', $course->id)->count();
                                                     if($data>0){
@@ -1409,7 +1409,7 @@
                                 <div class="learning-quiz-null text-center">
                                     <div class="col-lg-12">
                                         <h1>{{ __('No quiz') }}</h1>
-                                        <p>{{ __('No quizs detail') }}</p>
+                                        <p>{{ __('No quiz detail') }}</p>
                                     </div>
                                 </div> 
                             @endif

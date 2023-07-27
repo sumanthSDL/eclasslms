@@ -73,7 +73,7 @@
                                 <div class="row">
                                     @if($gsetting->fb_login_enable == 1)
                                     <div class="col-lg-2 col-4">
-                                        <a href="{{ url('/auth/facebook') }}" target="_blank" title="facebook" class="social-icon facebook-icon" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                        <a href="{{ url('https://www.facebook.com/') }}" target="_blank" title="facebook" class="social-icon facebook-icon" title="Facebook"><i class="fa fa-facebook"></i></a>
                                     </div>
                                     @endif
 

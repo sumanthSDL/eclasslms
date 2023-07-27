@@ -119,7 +119,7 @@
 
                                 echo "0";
                             }
-                        @endphp {{ __('Reviews') }})
+                        @endphp {{ __('Review') }})
                     </li>
                     <li>
                         @php
@@ -133,7 +133,7 @@
                                 echo "0";
                             }
                         @endphp
-                        {{ __('students enrolled') }}
+                        {{ __('student enrolled') }}
                     </li>
                 </ul>
             </div>
@@ -235,7 +235,7 @@
 
                                     echo "0";
                                 }
-                            @endphp {{ __('Reviews') }})
+                            @endphp {{ __('Review') }})
                         </li>
                         <li>
                             @php
@@ -249,7 +249,7 @@
                                     echo "0";
                                 }
                             @endphp
-                            {{ __('students enrolled') }}
+                            {{ __('student enrolled') }}
                         </li>
                     </ul>
                     <ul>
@@ -840,7 +840,7 @@
                                     // FSMS
                                 @endphp
 
-                                <small>{{ $chapterCount . " sections • " .$classesCount . " lectures • " . $courseDuration }}</small>
+                                <small>{{ $chapterCount . " section • " .$classesCount . " lecture • " . $courseDuration }}</small>
                             </div>
                         </div>
                         <div class="col-lg-3 col-6 col-xs-6 text-right">
@@ -1867,7 +1867,7 @@
                         <div class="review-block">
                             <div class="row">
                                 <div class="col-lg-2">
-                                    <h3 class="top-20">{{ __('Reviews') }}</h3>
+                                    <h3 class="top-20">{{ __('Review') }}</h3>
                                 </div>
                                 <div class="col-lg-10 col-12">
                                     <form id="demo-form2" method="post" action="{{route('course.rating',$course->id)}}" data-parsley-validate class="form-horizontal form-label-left">
@@ -2342,7 +2342,7 @@
 
                                                                 echo "0";
                                                             }
-                                                        @endphp Reviews)
+                                                        @endphp Review)
                                                     </li> 
                                                     @endif
                                                 </ul>
