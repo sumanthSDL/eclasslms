@@ -507,17 +507,15 @@ Route::post('/verifycode','HomeController@verifycode');
 
             });
 
-            Route::prefix('allinstructor')->group(function (){
-                    
-                Route::get('/','AllinstructorController@viewAllUser')->name('allinstructor.index');
-                Route::get('/alladdinstructor','AllinstructorController@create')->name('allinstructor.add');
-                Route::post('/allinsertinstructor','AllinstructorController@store')->name('allinstructor.store');
-                Route::get('edit/{id}','AllinstructorController@edit')->name('allinstructor.edit');
-                Route::put('/edit/{id}','AllinstructorController@update')->name('allinstructor.update');
-                Route::delete('delete/{id}','AllinstructorController@destroy')->name('allinstructor.delete');
-                Route::get('instructor/login/{id}', 'AllinstructorController@login')->name('instructoraslogin');
-
-            });
+            Route::prefix('allinstructor')->group(function () {
+    Route::get('/', 'AllinstructorController@viewAllUser')->name('allinstructor.index');
+    Route::get('/add', 'AllinstructorController@create')->name('allinstructor.add');
+    Route::post('/store', 'AllinstructorController@store')->name('allinstructor.store');
+    Route::get('/edit/{id}', 'AllinstructorController@edit')->name('allinstructor.edit');
+    Route::put('/update/{id}', 'AllinstructorController@update')->name('allinstructor.update');
+    Route::delete('/delete/{id}', 'AllinstructorController@destroy')->name('allinstructor.delete');
+    Route::get('/instructor/login/{id}', 'AllinstructorController@login')->name('instructoraslogin');
+});
             Route::prefix('alladmin')->group(function (){
                     
                 Route::get('/','AlladminController@viewAllUser')->name('alladmin.index');
