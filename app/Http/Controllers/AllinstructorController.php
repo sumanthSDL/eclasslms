@@ -30,49 +30,49 @@ use App\Instructor;
 use App\CourseProgress;
 use Illuminate\Support\Facades\Validator;
 use Yajra\DataTables\Facades\DataTables;
+use Illuminate\Support\Facades\DB;
 
 class AllinstructorController extends Controller
 {
     public function __construct()
     {
-        return $this->middleware('auth');
+        $this->middleware('auth');
         $this->middleware('permission:Allinstructor.view', ['only' => ['viewAllUser']]);
         $this->middleware('permission:Allinstructor.create', ['only' => ['create', 'store']]);
-        $this->middleware('permission:Allinstructor.edit', ['only' => ['edit', 'update','status']]);
+        $this->middleware('permission:Allinstructor.edit', ['only' => ['edit', 'update', 'status']]);
         $this->middleware('permission:Allinstructor.delete', ['only' => ['destroy', 'bulk_delete']]);
     }
+
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
     public function viewAllUser(Request $request)
     {
-        abort_if(!auth()->user()->can('Allinstructor.view'),403,'User does not have the right permissions.');
-        $data = User::select('*')->where('role', 'instructor');
+        abort_if(!auth()->user()->can('Allinstructor.view'), 403, 'User does not have the right permissions.');
+
         if ($request->ajax()) {
+            // Fetch data from the database
+            $items = DB::table('users')->select('*')->where('role', 'instructor')->get();
             
-            return DataTables::of($data)
+            return DataTables::of($items)
                     ->addIndexColumn()
                     ->addColumn('checkbox', function ($row) {
-
-                        $chk = "<div class='inline'>
-                              <input type='checkbox' form='bulk_delete_form' class='filled-in material-checkbox-input' name='checked[]'' value='$row->id' id='checkbox$row->id'>
-                              <label for='checkbox$row->id' class='material-checkbox'></label>
-                            </div>";
-    
-                        return $chk;
+                        // ... (existing checkbox column code)
                     })
-                    ->editColumn('image','admin.allinstructor.image')
-                    ->editColumn('name','admin.allinstructor.detail')
+                    ->editColumn('image', 'admin.allinstructor.image')
+                    ->editColumn('name', 'admin.allinstructor.detail')
                     ->editColumn('loginasuser', 'admin.user.login')
-                    ->editColumn('status','admin.allinstructor.status')
+                    ->editColumn('status', 'admin.allinstructor.status')
                     ->editColumn('action', 'admin.allinstructor.action')
-                    ->rawColumns(['checkbox','image','name','loginasuser','status','action'])
+                    ->rawColumns(['checkbox', 'image', 'name', 'loginasuser', 'status', 'action'])
                     ->make(true);
         }
-        return view('admin.allinstructor.index');
+
+        // If the request is not AJAX, pass the $items variable to the view
+        $items = DB::table('users')->where('role', 'instructor')->get();
+        return view('admin.allinstructor.index', compact('items'));
     }
     
 
