@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Schema;
 
 class RegisterController extends Controller
 {
+   
     /*
     |--------------------------------------------------------------------------
     | Register Controller
@@ -108,7 +109,7 @@ class RegisterController extends Controller
             $mobile = NULL;
         }
 
-        if($setting->verify_enable == 0)
+        if($setting->verify_enable == 1)
         {
             $verified = \Carbon\Carbon::now()->toDateTimeString();
         }
