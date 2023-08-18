@@ -108,7 +108,7 @@ class RegisterController extends Controller
             $mobile = NULL;
         }
 
-        if($setting->verify_enable == 0)
+        if($setting->verify_enable == 1)
         {
             $verified = \Carbon\Carbon::now()->toDateTimeString();
         }
@@ -246,16 +246,16 @@ class RegisterController extends Controller
         }
         
 
-        if($setting->w_email_enable == 1){
-            try{
+        // if($setting->w_email_enable == 1){
+        //     try{
                
-                Mail::to($data['email'])->send(new WelcomeUser($user));
+        //         Mail::to($data['email'])->send(new WelcomeUser($user));
                
-            }
-            catch(\Swift_TransportException $e){
+        //     }
+        //     catch(\Swift_TransportException $e){
 
-            }
-        }
+        //     }
+        // }
         
 
         return $user;

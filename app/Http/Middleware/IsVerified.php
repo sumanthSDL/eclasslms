@@ -24,7 +24,7 @@ class IsVerified
         {
             if(Auth::user()->role != "admin")
             {
-                if($setting->verify_enable == 1)
+                if($setting->verify_enable == 0)
                 {
                     if(Auth::user()->email_verified_at == NULL)
                     { 
