@@ -19,7 +19,9 @@ use App\Http\Controllers\Api\NewPasswordController;
 Route::get('email/verify', 'Api\VerificationController@show')->name('verification.notice');
 Route::get('email/verify/{id}/{hash}', 'Api\VerificationController@verifybyapi')->name('verification.verify');
 Route::get('email/resend', 'Api\VerificationController@resend')->name('verification.resend');
-
+Route::get('/verified-only',function(Request $request){
+	return $request->user();
+})->middleware('auth::api','verified');
 /* HomeModule API */
 Route::get('homemodules', 'Api\OtherApiController@homeModules');
 Route::middleware(['ip_block'])->group(function () {

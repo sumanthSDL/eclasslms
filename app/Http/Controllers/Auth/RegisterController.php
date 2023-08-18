@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Schema;
 
 class RegisterController extends Controller
 {
+   
     /*
     |--------------------------------------------------------------------------
     | Register Controller
