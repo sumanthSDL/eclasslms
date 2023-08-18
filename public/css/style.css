@@ -1186,10 +1186,10 @@ sup.redstar {
   padding: 50px 0 30px;
 }
 .testimonial-slider-main-block.owl-carousel .owl-item .testimonial-block img {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
-  margin-right: 20px;
+  margin-right: px;
   object-fit: cover;
   margin: 0 auto;
   position: absolute;
@@ -1218,6 +1218,52 @@ sup.redstar {
   font-size: 20px;
   padding: 25px 30px;
 }
+.testimonial-block-video {
+    margin-top: 20px;
+}
+
+.testimonial-block-video video {
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.main-div {
+  width: 250px;
+  height: 400px;
+  margin-left: 118px;
+}
+
+.main-div .video_video {
+  margin-top: -18px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: fill;
+}
+
+/* Hide video controls */
+.video_video {
+    cursor: pointer;
+}
+
+/* Styling for the modal */
+.video-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    overflow: auto;
+}
+.video-modal-content {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+}
+
 
 .trusted-main-block {
   background-color: var(--background-grey-bg-color);
@@ -10209,6 +10255,7 @@ svg.feather {
 
 
 
+
 .view-date svg.feather {
   margin: 0 5px 0 0;
   vertical-align: middle;
@@ -10801,7 +10848,7 @@ svg.feather {
   object-fit: cover;
 }
 .video-block .overlay-bg {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba (139, 0, 0, 255);
   border-radius: 6px;
 }
 .play-btn {
@@ -15098,11 +15145,6 @@ ul.form-stepper li a .form-stepper-circle {
   height: 150px;
 }
 
-
-
-
-
-
 .testimonial-main-block {
   background-color: var(--background-grey-bg-color);
 }
@@ -15110,12 +15152,12 @@ ul.form-stepper li a .form-stepper-circle {
   padding: 10px 0;
 }
 .testimonial-slider-main-block.owl-carousel .owl-item .testi-block img {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 100%;
-  margin-right: 20px;
   object-fit: cover;
-  margin: 0 auto;
+  margin: -30px auto;
+  margin-right: 148px;
 }
 .testimonial-slider-main-block.owl-carousel .owl-item .testi-block .testi-block-red-images img {
   width: 100%;
@@ -15163,7 +15205,7 @@ ul.form-stepper li a .form-stepper-circle {
 
 .testimonial-slider-main-block.owl-carousel .owl-item .testi-block .testi-block-images img {
   width: 100%;
-  height: 360px;
+  height: 60px;
   border-radius: inherit;
   object-fit: inherit;
   -webkit-transition: all 0.5s ease;
@@ -15557,7 +15599,7 @@ ul.form-stepper li a .form-stepper-circle {
     height: 300px;
   }
   .testi-img.text-center {
-    margin-top: -32%;
+    margin-top: -25%;
   }
   .testi-dtl p {
     padding: 0 50px;

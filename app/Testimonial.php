@@ -32,6 +32,6 @@ class Testimonial extends Model
     protected $table = 'testimonials';
 
   	protected $fillable = [
-      	'client_name','details','status','image', 'created_at', 'updated_at','rating','designation'
+      	'client_name','details','status','image', 'video', 'created_at', 'updated_at','rating','designation'
   	];
 }

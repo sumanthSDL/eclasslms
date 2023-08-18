@@ -55,6 +55,7 @@ class TestimonialController extends Controller
             'client_name'=>'required',
             'details'=>'required',
             'image'=>'required',
+            'video'=>'required',
         ]);
 
 
@@ -69,6 +70,13 @@ class TestimonialController extends Controller
           $input['image'] = $image;
           
         }
+        if ($file = $request->file('video')) 
+        {
+            $videoName = time() . '.' . $file->getClientOriginalExtension();
+            $file->move(public_path('videos/testimonial/'), $videoName);
+            $data['video'] = $videoName;
+        }
+
 
         $input['created_at']  = \Carbon\Carbon::now()->toDateTimeString();
         $input['updated_at']  = \Carbon\Carbon::now()->toDateTimeString();
@@ -138,6 +146,17 @@ class TestimonialController extends Controller
             $file->move('images/testimonial', $name);
             $input['image'] = $name;
         }
+
+        if ($file = $request->file('video')) {
+        // Process and save video
+        if ($testimonial->video != "") {
+            // Perform any cleanup or validation if required for the existing video.
+        }
+
+        $videoName = time().'.'.$file->getClientOriginalExtension();
+        $file->move('videos/testimonial', $videoName);
+        $input['video'] = $videoName;
+    }
 
 
         $input['updated_at']  = \Carbon\Carbon::now()->toDateTimeString();
