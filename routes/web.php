@@ -8,6 +8,7 @@ use App\CourseClass;
 use App\Course;
 use Illuminate\Support\Facades\Artisan;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -418,9 +419,10 @@ Route::post('/verifycode','HomeController@verifycode');
             Route::get('manualpayment-status','ManualPaymentController@status')->name('manualpayment.status');
             Route::post('manualpayment-bulk-delete', 'ManualPaymentController@bulk_delete')->name('manualpayment.bulk.delete');
 
+
             Route::get('order/enroll/{user_id}', 'OrderController@enrollUser')->name('order.enrolluserview');
 
-
+          
             Route::resource('attandance','AttandanceController');
             Route::get('view/users/{id}', 'AttandanceController@enrolled')->name('enrolled.users');
             Route::get('user/attandance/{id}/{course}', 'AttandanceController@attandance')->name('user.attandance');
@@ -877,7 +879,7 @@ Route::post('/verifycode','HomeController@verifycode');
 
             Route::get('all/wishlist', 'WishlistController@wishlistpage')->name('wishlist.show');
             Route::post('delete/wishlist/{id}', 'WishlistController@deletewishlist');
-
+            
             Route::post('addtocart', 'CartController@addtocart')->name('addtocart');
             Route::post('removefromcart/{id}','CartController@removefromcart')
               ->name('remove.item.cart');
