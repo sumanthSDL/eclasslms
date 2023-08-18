@@ -45,6 +45,18 @@ $data['title2'] = 'Create Testimonial';
                 </div>
               </div>
               <div class="form-group col-md-4">
+                <label for="exampleInputVideo">{{ __('Video') }}:<sup class="text-danger">*</sup></label><br>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupFileAddon02">{{ __('Upload') }}</span>
+                  </div>
+                  <div class="custom-file">
+                    <input type="file" name="video" class="custom-file-input" id="inputGroupFile02" aria-describedby="inputGroupFileAddon02">
+                    <label class="custom-file-label" for="inputGroupFile02">{{ __('Choose video') }}</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-md-4">
                 <label for="exampleInputTit1e">{{ __('Client Name') }}:<sup class="text-danger">*</sup></label>
                     <input type="text" class="form-control" name="client_name" id="exampleInputTitle" placeholder="{{ __('Enter Name') }}" value="">
               </div>

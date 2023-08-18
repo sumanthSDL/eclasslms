@@ -730,7 +730,7 @@
                                     @endcan
                                     <li class="{{ Nav::isResource('admin/menu') }}">
                                         <a href="{{url('admin/menu')}}">
-                                            <span>{{ __('Menu Customisation') }}</span>
+                                            <span>{{ __('Menu Customization') }}</span>
                                         </a>
                                     </li>
                                     @can(['front-settings.advertisement.view'])

@@ -59,6 +59,7 @@ $data['title1'] = 'All Testimonials';
                               <label for="checkboxAll" class="material-checkbox"></label> 
                               #</th>
                             <th>{{ __('Image') }}</th>
+                            <th>{{ __('Video') }}</th>
                             <th>{{ __('Client Name') }}</th>                          
                             <th>{{ __('Rating') }}</th>
                             <th>{{ __('Status') }}</th>
@@ -73,6 +74,12 @@ $data['title1'] = 'All Testimonials';
                               {{$key+1}}</td>
                             <td>
                               <img src="images/testimonial/<?php echo $p['image']; ?>" class="img-circle">
+                            </td>
+                            <td>
+                              <video width="320" height="240" controls>
+                              <source src="{{ asset('videos/testimonial/' . $p->video) }}" type="video/mp4">
+                              Your browser does not support the video tag.
+                              </video>
                             </td>
                             <td>{{$p->client_name}}</td>
                            

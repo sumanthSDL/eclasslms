@@ -20,7 +20,7 @@ $data['title1'] = 'Breadcum';
         <div class="col-lg-12">
             <div class="card dashboard-card m-b-30">
                 <div class="card-header">
-                    <h5 class="card-title">{{ __('Breadcum') }}</h5>
+                    <h5 class="card-title">{{ __('Breadcrumb') }}</h5>
                 </div>
                 <div class="card-body">
                     <form class="form" action="{{ route('breadcum.update') }}" method="POST" novalidate

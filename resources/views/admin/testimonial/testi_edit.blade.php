@@ -57,9 +57,28 @@ $data['title2'] = 'Edit Testimonial';
                     <label class="custom-file-label" for="inputGroupFile01">{{ __('Choose file') }}</label>
                   </div>
                 </div>          
-                
                 <img src="{{ url('/images/testimonial/'.$test->image) }}" class="img-responsive image_size"  />
               </div>
+              <div class="form-group col-md-4">
+                 <label for="exampleInputVideo">{{ __('Video') }}:</label><br>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroupFileAddon02">{{ __('Upload') }}</span>
+                      </div>
+                      <div class="custom-file">
+                        <input type="file" name="video" class="custom-file-input" id="inputGroupFile02" aria-describedby="inputGroupFileAddon02">
+                        <label class="custom-file-label" for="inputGroupFile02">{{ __('Choose file') }}</label>
+                      </div>
+                    </div>
+
+                  @if(!empty($test->video))
+                    <video controls class="video_size">
+                      <source src="{{ url('/videos/testimonial/'.$test->video) }}" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  @endif
+              </div>
+
              
               <div class="col-md-6">
                 <div class="form-group{{ $errors->has('rating') ? ' has-error' : '' }}">
