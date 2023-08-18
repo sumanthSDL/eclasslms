@@ -12,6 +12,8 @@ use Session;
 use App\Coupon;
 use Illuminate\Support\Facades\App;
 use App\Adsense;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\AdminEnrollmentNotification;
 
 class CartController extends Controller
 {
@@ -38,6 +40,9 @@ class CartController extends Controller
             return back()->with('delete',trans('flash.CartAlready'));
         }
         else {
+
+            $course = Course::find($request->course_id);
+            $user = Auth::user();
             
             DB::table('carts')->insert(
             array(
@@ -51,9 +56,9 @@ class CartController extends Controller
 
             )
         );
+        Mail::to('jason.d@sdlglobe.com')->send(new AdminEnrollmentNotification($course, $user));
 
-
-        return back()->with('success', trans('flash.CartAddedWithLink', ['cartLink' => route('cart.show')])); // hmd
+        return back()->with('success', trans('You have succesfully enrolled, our team will contact you soon', ['cartLink' => route('cart.show')])); // hmd
         }
 
     	
